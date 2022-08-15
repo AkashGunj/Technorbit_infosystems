@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.technorbit.dao.Student_RegistrationRepository;
 import com.technorbit.entities.Stud_Registration;
-import com.technorbit.service.EmailService;
+
 
 @Controller
 public class ForgotController {
