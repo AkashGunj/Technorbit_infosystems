@@ -25,7 +25,7 @@ import com.technorbit.dao.Student_RegistrationRepository;
 import com.technorbit.dao.Subscribe_Repository;
 import com.technorbit.helper.Message;
 import com.technorbit.service.EmailService;
-import com.technorbit.service.EmailSubscriberService;
+
 
 @Controller
 @RequestMapping("/admin")
