@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width:100%;
+  position: absolute;
+  z-index: 1;
+  
+  margin-top:30px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#course{
+	
+	border:1px solid bisque;
+	height:60%;
+	width:60%px;
+	background-image: url(../img/course.jpg);
+}
+
+#lblcourse{
+	
+	color: white;
+	font-size:50px;
+	margin-left:20px;
+	
+	
+}
+#inner{
+	margin-left: 34%;
+	margin-top:10%;
+	height:200px;
+}
+#path{
+	color: white;
+	font-size:20px;
+	margin-left:100px;
+	
+	
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="/user/index">Home</a></li>
+  <li><a href="/user/courses">Courses</a></li>
+  <li><a href="/user/gallery">Gallery</a></li>
+  <li><a href="/user/quiz">Quiz</a></li>
+    <li><a href="/user/about">About Us</a></li>
+      <li><a href="/user/contactus">contactus</a></li>
+  <li><a href="/user/comment">Comment</a></li>
+  <li style="float:right"><a href="#">Profile</a></li>
+  <li style="float:right"><a href="/logout">Logout</a></li>
+</ul>
+
+<div id="course">
+		<div id="inner">
+		<label id="lblcourse">Admin Comments</label><br><br>
+		<label id="path">Home ->Comments</label>
+		</div>
+	</div>
+	
+	
+
+<table id="customers">
+  <tr>
+  <th>Your ID</th>
+  <th>Date</th>
+    <th>Comment</th>
+    
+    
+  </tr>
+  
+  <tr th:each="c : ${akash}">
+    <td th:text="${c.stud_id}"></td>
+    <td th:text="${c.stud_date}"></td>
+    <td th:text="${c.stud_comment}"></td>
+   
+  </tr>
+  
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,448 @@
+<html>
+<head>
+</head>
+<style>
+
+
+#lblcourse{
+	
+	color: white;
+	font-size:50px;
+	
+}
+
+#lblb{
+	
+	color: black;
+	font-size:45px;
+	font-family: "Roboto Slab", sans-serif;
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#course{
+	
+	border:1px solid bisque;
+	height:50%;
+	width:60%px;
+	background-image: url(../img/course.jpg);
+	font-family: "Roboto Slab", sans-serif;
+}
+
+
+#inner{
+	margin-left: 42%;
+	margin-top:10%;
+}
+#path{
+	color: white;
+	font-size:20px;
+	margin-left:10px;
+	font-family: "Roboto Slab", sans-serif;
+	
+	
+}
+
+
+#footer{
+	
+	border:1px solid black;
+	background-color: black;
+	color: white;
+	margin-top: 3%;
+	height: 60px;
+	width:100%;
+	text-align: center;
+	
+
+}
+#lblfooter{
+	font-size: 20px;
+}
+#heading{
+	
+	font-size:50px;
+	height: 80px;
+	width: 60%;
+	margin-top:40px;
+	margin-left: 36px;
+	font-family: "Roboto Slab", sans-serif;
+	
+}
+#para11{
+	font-size:20px;
+	color:#636363;
+	line-height: 33px;
+	margin-left: 36px;
+	font-family: "Roboto Slab", sans-serif;
+}
+#para12{
+	font-size:20px;
+	color:#636363;
+	line-height: 33px;
+	font-family: "Roboto Slab", sans-serif;
+}
+#para13{
+	font-size:20px;
+	color:#636363;
+	line-height: 33px;
+	font-family: "Roboto Slab", sans-serif;
+}
+#img{
+	border:1px solid white;
+	height:900px;
+	width:1230px;
+	margin-left: 36px;
+	background-image: url(../img/amolsir.jpg);
+	background-size: cover;
+	
+}
+#div1{
+	border:1px solid white;
+	height:400px;
+	width:600px;
+	position: absolute;
+	z-index: 1;
+	margin-left: 36px;
+}
+#div2{
+	border:1px solid white;
+	height:400px;
+	width:600px;
+	margin-left:50%;
+}
+#studentsay{
+border:1px solid white;
+height: 500px;
+width: 1330px;
+background-color:black; 
+}
+#lblwhat{
+font-size: 40px;
+color: white;
+font-family: "Times New Roman";
+margin-left:450px;
+margin-top:40px; 
+}
+#innerbox{
+border: 1px solid white;
+height: 190px;
+width: 160px;
+position: absolute;
+}
+#innerbox1{
+border: 1px solid white;
+height: 190px;
+width: 160px;
+position: absolute;
+
+}
+#outerbox{
+border:1px solid white;
+height:190px;
+width: 490px;
+background-color: white;
+margin-left: 80px;
+position: absolute;
+
+
+}
+#outerbox1{
+border:1px solid white;
+background-color: white;
+height:190px;
+width: 490px;
+margin-top: 5%;
+margin-left: 60%;
+z-index: -1;
+
+}
+#comment{
+	
+height: 190px;
+width: 160px;
+}
+#lblomshri{
+	color: orange;
+	font-size: 24px;
+	margin-left: 34%;
+	margin-top:10px;
+	z-index: -1;
+	font-family: "Times New Roman";
+
+}
+#lblomshri1{
+	color: orange;
+	font-size: 24px;
+	margin-left: 34%;
+	margin-top:10px;
+	z-index: -1;
+	font-family: "Times New Roman";
+
+}
+#lbledu{
+	color:tomato;
+	font-size: 15px;
+	margin-left: 40%;
+	margin-top:10px;
+	z-index: -1;
+	font-family: "Times New Roman";
+
+}
+#lbledu1{
+	color:tomato;
+	font-size: 15px;
+	margin-left: 40%;
+	margin-top:10px;
+	z-index: -1;
+	font-family: "Times New Roman";
+
+}
+#para{
+	color:black;
+	font-size: 17px;
+	margin-left: 34%;
+	margin-top:10px;
+	z-index: -1;
+	font-family: "Times New Roman";
+
+}
+#para1{
+	color:black;
+	font-size: 17px;
+	margin-left: 34%;
+	margin-top:10px;
+	z-index: -1;
+	font-family: "Times New Roman";
+
+}
+
+</style>
+
+<body style="background-color:white;">
+<ul>
+  <li><a href="/user/index">Home</a></li>
+  <li><a href="/user/courses">Courses</a></li>
+  <li><a href="/user/gallery">Gallery</a></li>
+  <li><a href="/user/quiz">Quiz</a></li>
+    <li><a href="/user/about">About Us</a></li>
+      <li><a href="/user/contactus">contactus</a></li>
+  <li><a href="/user/comment">Comment</a></li>
+  <li style="float:right"><a href="#">Profile</a></li>
+  <li style="float:right"><a href="/logout">Logout</a></li>
+</ul>
+
+	<div id="course">
+		<div id="inner">
+		<label id="lblcourse">About Us</label><br><br>
+		<label id="path">Home > About us</label>
+		</div>
+	</div>
+	
+	<div id="heading">
+	<label id="lblc">Our Story</label>
+	</div>
+	
+	<p id="para11">We started teaching C , C++ , Java (Core + Advanced) , Python , 
+	Data Structures using C , C++ , JAVA , Assembly Language for Computer 
+	Science / IT students of Engineering , Bsc(Computer Science) , Msc(Computer Science) 
+	, MCA , Bsc(Physics) , Bsc(Electronics) . 
+	</p><br><br><br>
+	
+	<div id="img">
+	</div><br><br><br><br>
+
+	<div id="div1">
+	<label id="lblb">Who We Are</label>
+	<p id="para12">
+	<b>In</b> September 2016, Amol Eknath Rahane, a young teacher, started technOrbit Infosystems with a 
+	mission to create ethical & intellectual students through qualitative education.<br><br>
+
+    We started teaching C , C++ , Java (Core + Advanced) , Python , Data Structures using C , C++ , JAVA , Assembly Language for Computer Science / IT students of Engineering , Bsc(Computer Science) , Msc(Computer Science) , MCA , Bsc(Physics) , Bsc(Electronics).
+	</p>
+	</div>
+	
+	<div id="div2">
+	<label id="lblb">What We Do</label>
+	<p id="para13">
+	<b>The</b> teacher of technOrbit Infosystems have periodical brain-storming sessions among 
+	themselves to plan his teaching method. The commitment of the teacher to draw the best 
+	out of weak students has also been an important factor contributing to the trust the classes 
+	enjoys among the parents.<br><br>
+
+   TechnOrbit Infosystems strongly believes that the best is yet to come, and is always ready to 
+   reach higher levels of excellence in the years to come.
+
+	</div>
+	
+	<div id="studentsay">
+<div id="lblwhat">What Student's Say ?</div>
+	
+
+					<div class="ab cd">
+					 			
+					  						<div id="outerbox">
+					  						
+													<div id="innerbox">
+													<img src="../img/Omshrig.jpg" id="comment">
+													
+													</div>
+													<label id="lblomshri">Omshri Ghodekar</label>
+													<label id="lbledu">...( AVCOE Computer Engineering )</label><br>
+													<p id="para">Amol sir gives detail knowledge of every topic...best class to learn
+													programming...very good experience of learning each and every concept...but
+													before joining the class one should be ready to solve all assignments..otherwise :)
+													</p>
+													
+					  						</div>
+				
+					  						<div id="outerbox1">
+													<div id="innerbox1">
+													<img src="../img/Adarsha.jpg" id="comment">
+													</div>
+													<label id="lblomshri1">Adarsh Avhale</label>
+													<label id="lbledu1">...( AVCOE IT Engineering )</label><br>
+													<p id="para1">Technorbit class made us stand in an IT field enviourment.
+													It is the best class to learn the programming language from basics.Here Concepts
+													are cleared with the live examples.Programming is learn with fun.
+													</p>
+				    						 </div>
+					  
+					</div>
+					
+					<div class="ab cd">
+					 			 <div class="numbertext">1 / 4</div>
+					  						<div id="outerbox">
+													<div id="innerbox">
+													<img src="../img/img2.jpeg" id="comment">
+													</div>
+													<label id="lblomshri1">Nancy Rao</label>
+													<label id="lbledu1">...( AVCOE Computer Engineering )</label><br>
+													<p id="para1"><br>It's a best place for gaining knowledge of programming under the
+													guidance of amol sir.Way of teaching is too effective.
+													</p>
+					  						</div>
+					  						
+				
+					  						<div id="outerbox1">
+													<div id="innerbox">
+													<img src="../img/img4.jpeg" id="comment">
+													</div>
+													<label id="lblomshri1">Nikhil Kasar</label>
+													<label id="lbledu1">...( AVCOE Computer Engineering )</label><br>
+													<p id="para1"><br>Dear sir Thanks for making complex concept easy for us...
+													</p>
+				    						 </div>
+					  
+					</div>
+					
+					<div class="ab cd">
+					 			 <div class="numbertext">1 / 4</div>
+					  						<div id="outerbox">
+													<div id="innerbox">
+													<img src="../img/img5.jpeg" id="comment">
+													</div>
+													<label id="lblomshri1">Shubham Khilari</label>
+													<label id="lbledu1">...( AVCOE Mechnical Engineering )</label><br>
+													<p id="para1">TechnOrbit Infosystems...is improving technical knowledge
+													...and programming knowledge..with logic.and hard topics...with easily...
+													understanding..in each and each topics..with 100% placement in IT companies.
+																									</p>
+					  						</div>
+				
+					  						<div id="outerbox1">
+													<div id="innerbox">
+													<img src="../img/img6.jpeg" id="comment">
+													</div>
+														<label id="lblomshri1">Akash Gunjal</label>
+													<label id="lbledu1">...(D.J.Malpani commerence and science college)</label><br>
+													<p id="para1"> In TechnOrbit Infosystems programming knowledge is more improved
+													,Best for the programming logic development.Learning of programming with full of 
+													enjoyment :) </p>
+				    						 </div>
+					  
+					</div>
+					
+				
+					
+					
+					
+					
+					
+					
+					
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+				
+				
+				
+</div>	
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("ab");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+				
+				
+				
+</div>
+
+
+
+	<div id="footer"><br>
+	<label id="lblfooter">@Copyright @2020-2021 technorbit infosystems - All Right Reserved</label>
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<html>
+<head>
+</head>
+<style>
+
+.body{
+	
+	background-color: rgb(248, 249, 250) ;
+}
+
+
+
+
+#oimg{
+
+	border:1px solid white;
+	height: 630px;
+	Width:740px;
+	position: absolute;
+}
+
+#technoimg{
+	
+	height: 630px;
+	width: 740px;
+}
+
+#login{
+	border:1px solid grey;
+	
+	height: 630px;
+	width:580px;
+	z-index: -1;
+	margin-left: 56%;
+	position: absolute;
+}
+#lblregister{
+	font-size: 30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	margin-top: 2%;
+	margin-left: 40%;
+	
+}
+#lblwelback{
+	margin-left: 40%;
+	margin-top: 10px;
+}
+#txtname{
+	margin-left:11%;
+	margin-top:4%;
+	width: 80%;
+	box-sizing: "border-box";
+	border: none;
+    border-bottom: 2px solid orange;
+    font-size: 20px;
+}
+#rbtn{
+	
+	margin-top:30px;
+	margin-left: 70px;
+	
+}
+#lblterm{
+	margin-left:30%;
+}
+#btnsub {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 37%;
+}
+#txt{
+	
+	color: red;
+	font-size: 20px;
+	margin-left: 10%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#lblforgot{
+	
+	margin-left: 37%;
+}
+</style>
+
+<body>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="courses">Courses</a></li>
+  <li><a href="gallery">Gallery</a></li>
+  <li><a href="about">About Us</a></li>
+  <li><a href="contactus">Contact</a></li>
+  <li><a href="/admin/index">Admin</a></li>
+  <li style="float:right"><a href="/user/index">Signin</a></li>
+</ul>
+
+
+
+
+<div id="oimg">
+<img src="../img/tehnologin.webp" id="technoimg">
+</div>
+
+<div id="login">
+
+	
+	
+	<div id="lblregister">
+	<label>Sign Up</label>
+	</div>
+	
+	<form  id="myForm" action "" th:action="@{/do_register}" method="post" th:object="${stud_reg}">
+	<div id="txt" th:if="${session.messsage}" th:classappend="${session.messsage.type}" class="alert" role="alert">
+
+	<p class="text-center" th:text="${session.messsage.content}"></p>
+
+	<th:block th:next="${#session.removeAttribute('messsage')}"></th:block>
+
+	</div>
+	<input type="text" id="txtname" placeholder="Enter your full name *" th:value="${stud_reg.sname}" name="sname" required ><br>
+	<div class="invalid-feedback" th:each="e:${#fields.errors('sname')}" th:text="${e}">
+                                        	name is required
+                                        </div>
+                                        
+                                        
+	<input type="text" id="txtname" placeholder="Enter your Address *"  name="address" required th:value="${stud_reg.address}"/>
+	<input type="text" id="txtname" placeholder="Enter your Username *"  name="username" required th:value="${stud_reg.username}"/>
+	<input type="password" id="txtname" placeholder="Enter your password *"  name="password" required />
+	
+	<div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" id="rbtn" value="male" checked>
+                                                    <span> Male </span> 
+                                                </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" id="rbtn" value="female">
+                                                    <span>Female </span> 
+                                                </label>
+                                            </div>
+                                    
+      <input type="mail" id="txtname" placeholder="Enter your email id *"  name="mailid" required th:value="${stud_reg.mailid}" />
+      <input type="text" id="txtname" placeholder="Enter your mob no *"  name="mobno" required th:value="${stud_reg.mobno}"/>
+       <input type="date" id="txtname" placeholder="Enter your bdate *"  name="txtbdate" required th:value="${stud_reg.date}"/>
+      
+       <div class="form-group form-check text-center" id="lblterm">
+       <br><input type="checkbox" name="agreement" class="form-check-input" id="agreement" />
+        <label for="agreement">Accept terms and conditions</label> 
+       </div><br>
+       <button type="submit" id="btnsub" class="btn btn-primary">Submit</button><br><br>
+       <a href="/user/index" id="lblforgot">Go to Login</a><br><br>
+                                        	
+	
+	</form>
+</div>
+
+
+</body>
+</html>

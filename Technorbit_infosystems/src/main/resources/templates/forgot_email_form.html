@@ -1,0 +1,130 @@
+<html>
+<head>
+</head>
+<style>
+
+#footer{
+	
+	border:1px solid black;
+	background-color: black;
+	color: white;
+	margin-top: 108%;
+	height: 60px;
+	width:100%;
+	text-align: center;
+	
+
+}
+#lblfooter{
+	font-size: 20px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+#outer{
+	border: 1px solid red;
+	height: 250px;
+	width: 500px;
+	margin-left: 400px;
+	margin-top:150px;
+	text-align: center;
+	background-color: white;
+	}
+#lbl{
+	font-size: 25px;
+	margin-top: 40px;
+}
+#txtname{
+	
+	margin-top:7%;
+	width: 80%;
+	box-sizing: "border-box";
+	border: none;
+    border-bottom: 2px solid orange;
+    font-size: 20px;
+}
+#btnsub {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+}
+#d{
+	color: red;
+	font-size:18px;
+}
+body{
+	background-image: url("../img/techno.jpg");
+	background-size: cover;
+	
+}
+</style>
+
+<body>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="courses">Courses</a></li>
+  <li><a href="gallery">Gallery</a></li>
+  <li><a href="about">About Us</a></li>
+  <li><a href="contactus">Contact</a></li>
+  <li><a href="/admin/index">Admin</a></li>
+  <li style="float:right"><a href="/user/index">Signin</a></li>
+</ul>
+
+
+<form action="" method="POST" th:action="@{/send-otp}">
+<div id="outer">
+	<div id="lbl">
+	<label>Your Registered Email</label>
+	<div id="d" th:if="${session.message}" class="container">
+		<div class="alert alert-danger my-2 text-center" role="alert">
+			<span th:text="${session.message}"></span>
+		</div>
+		<th:block th:text="${#session.removeAttribute('message')}"></th:block>
+	</div>
+	
+	
+	</div>
+	<input type="text" id="txtname" placeholder="Enter your Email *"name="email" required=""><br><br><br>
+	<button type="submit" id="btnsub" class="btn btn-primary">Send OTP</button><br><br>
+
+</div>
+</form>
+	
+	
+	
+
+</body>
+</html>

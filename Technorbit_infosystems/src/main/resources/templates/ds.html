@@ -1,0 +1,508 @@
+<html>
+<head>
+</head>
+<style>
+
+.body{
+	background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#course{
+	
+	border:1px solid bisque;
+	height:50%;
+	width:60%px;
+	background-image: url(../img/course.jpg);
+}
+
+#lblcourse{
+	
+	color: white;
+	font-size:50px;
+	
+}
+#inner{
+	margin-left: 42%;
+	margin-top:10%;
+}
+#path{
+	color: white;
+	font-size:20px;
+	margin-left:10px;
+	
+	
+}
+
+
+#footer{
+	
+	border:1px solid black;
+	background-color: black;
+	color: white;
+	margin-top: 5%;
+	height: 60px;
+	width:100%;
+	text-align: center;
+	
+
+}
+#lblfooter{
+	font-size: 20px;
+}
+
+#heading{
+	
+	height: 80px;
+	width: 70%;
+	margin-top:40px;
+	margin-left: 30px;
+	
+}
+#lblc{
+	
+	color:black;
+	font-size:50px;
+	margin-top: 10px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+
+
+}
+#first{
+	
+	height: 60px;
+	width: 200px;
+	margin-left:30px;
+	margin-top:12px;
+	position: absolute;
+}
+#second{
+	
+	height: 60px;
+	width: 200px;
+	margin-left:300px;
+	margin-top:20px;
+	position: absolute;
+	
+}
+#lbldate{
+	color: black;
+	
+	font-size: 18px;
+	
+}
+#lbltime{
+	color: grey;
+	
+	font-size: 15px;
+	
+}
+#desc{
+	border:1px solid orange;
+	height: 1000px;
+	width: 850px;
+	margin-top:100px;
+	margin-left:30px;
+	padding-left: 10px;
+	padding-top: 10px;
+	position: absolute;
+}
+#lblcoursedesc{
+	color: black;
+	font-size:30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#para{
+	color: grey;
+	font-size:20px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	line-height: 30px;
+}
+#para1{
+	color: grey;
+	font-size:18px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	line-height: 30px;
+	margin-left:10px;
+}
+#lblcertification{
+	
+	color: black;
+	font-size:30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	
+}
+#table{
+	column-gap:20px;
+}
+table{
+	 border-collapse: separate;
+    border-spacing: 0 1em;
+    
+}
+#enroll{
+	border:1px solid orange;
+	height: 400px;
+	width: 400px;
+	margin-left:69%;
+	margin-top: 7%;
+	
+}
+#danies{
+	border:2px solid white;
+	animation: blink 1s;
+    animation-iteration-count: 180;
+	height: 300px;
+	width: 400px;
+	margin-left:69%;
+	margin-top: 3%;
+	
+}
+@keyframes blink { 50% { border-color:red ; }  }
+#lblfee{
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#lblrs{
+	margin-left: 80px;
+	font-size: 30px;
+	color: orange;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#lbllect{
+	
+	margin-left: 20px;
+	font-size: 18px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	
+}
+#lbllecture{
+	margin-left: 60%;
+}
+#lbladv{
+	margin-left: 55%;
+}
+#lblstu{
+	margin-left: 43%;
+}
+#lbllan{
+	margin-left: 26%;
+}
+#register{
+	
+	 background-color: orange;
+  color: white;
+  padding: 14px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 9.3%;
+  font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#until{
+	color: gray;
+	 font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	 margin-left: 120px;
+	 font-size:15px;
+}
+#lbldenis{
+	font-size: 25px;
+	 font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	 color:black;
+	 margin-left: 50%;
+	 margin-top: 15px;
+}
+#lblfounder{
+	font-size:15px;
+	color: grey;
+	margin-top:5px;
+	margin-left:7px;
+}
+#recent{
+	border: 1px solid orange;
+	height:600px;
+	width: 1300px;
+	margin-top:2%;
+	margin-left: 2%;
+	background-color:lightgoldenrodyellow;
+}
+#lblrecentcourses{
+	font-size: 50px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	text-align: center;
+	
+}
+#inside{
+border:1px solid orange;
+height:430px;
+width:400px;
+color:white;
+background-color:black;
+margin-left: 20px;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#inside1{
+border:1px solid orange;
+height:430px;
+width:400px;
+color:white;
+background-color:black;
+margin-left: 33.2%;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#inside2{
+border:1px solid orange;
+height:430px;
+width:400px;
+color:white;
+background-color:black;
+margin-left: 65%;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#c{
+height:280px;
+width:400px;
+}
+#lblcomm{
+	color: white;
+	font-size:30px;
+}
+#common{
+	color: grey;
+	font-size: 15px;
+}
+
+
+</style>
+
+<body style="background-color:rgb(255, 255, 255);">
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="courses">Courses</a></li>
+  <li><a href="gallery">Gallery</a></li>
+  <li><a href="about">About Us</a></li>
+  <li><a href="contactus">Contact</a></li>
+  <li><a href="/admin/index">Admin</a></li>
+  <li style="float:right"><a href="/user/index">Signin</a></li>
+</ul>
+
+	<div id="course">
+		<div id="inner">
+		<label id="lblcourse">Course Detail</label><br><br>
+		<label id="path">Home -> Courses -> Data structure using c & c++</label>
+		</div>
+	</div>
+	
+	<div id="heading">
+	<b><label id="lblc">Data Structures using C and C++ </label></b>
+	</div>
+	
+	<div id="first">
+	<b><label id="lbldate">05 / June / 2021</label><br></b>
+	<label id="lbltime">12.00 AM / 1.00 PM</label>
+	</div>
+	
+<div id="desc">
+		<div id="lblcoursedesc">
+		<b><label>Course Descriptions</label></b>
+		</div>
+		
+		<div id="para">
+		<p><b>Getting Organised is Always Good</b>...Whenever we want to work with 
+		large amount of data, then organizing that data is very important. 
+		If that data is not organized effectively, it is very difficult to 
+		perform any task on that data. If it is organized effectively then 
+		any operation can be performed easily on that data. </p><br>
+		<p>Well organised data structures allow for quick and efficient retrieval 
+		of information and are essential for modern computing. Organised data 
+		can be easily sorted, ordered, and searched to retrieve information that 
+		meets certain requirements. </p>
+		</div>
+	
+		<div id="lblcertification">
+		<b><label>Certifications</label></b>
+		</div>
+		<div id="para">
+		<p>Data Structure using C and C++ Certified Associate is a professional 
+		certificate offered by technOrbit Infosystems accredited by ISO that measures
+		 your ability to accomplish coding tasks related to Searching, Sorting, Linked
+		  List etc. in the C language and C++, as well as fundamental programming 
+		  techniques like Time complexity and Space complexity including the most 
+		  common techniques to improve Time complexity and Space complexity.
+		</p>
+		</div>
+		
+		<div id="lblcoursedesc">
+		<b><label>Syllabus</label></b>
+		</div>
+		<br>
+		<div id="table">
+		<table  style="font-family:roboto,'Noto Sans Myanmar UI',arial,sans-serif ;font-size: 18px;">
+		
+		<th>
+		<span class="dot"><tr><td style="color: grey;">Topic 01</td><td></td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td> Introduction to Data Structures</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></span>
+		<td style="color: grey;">Topic 07</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Linked Lists</td></tr>
+		<tr><td style="color: grey;">Topic 02</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Algorithm Analysis</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 08</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Stacks</td></tr>
+		<tr><td style="color: grey;">Topic 03</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Arrays</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 09</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Queus</td></tr>
+		<tr><td style="color: grey;">Topic 04</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Pointers</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 10</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Trees</td></tr>
+		<tr><td style="color: grey;">Topic 05</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Structures</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 11</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Graphs</td></tr>
+		<tr><td style="color: grey;">Topic 06</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Dynamic Memory Allocation</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 12</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Advaned Data Structures</td></tr>
+
+		</th>
+		</table>
+		</div>
+	
+</div>
+
+		<div id="enroll">
+			<div id="lblfee">
+				<label>Course Fee</label>
+					
+					<lable id="lblrs"> Rs.5000 Only</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Lectures</label>
+					<lable id="lbllecture"> 12 Unit</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Duration</label>
+					<lable id="lbllecture">2 Months</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Skill Level</label>
+					<lable id="lbladv">Advanced</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Max Students</label>
+					<lable id="lblstu">30 Students</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Language</label>
+					<lable id="lbllan">English / Marathi / Hindi</lable><br>	<br>
+			</div><br>
+			
+			<a href="/register1" id="register" target="_blank" onclick="popup();">Take This Course</a>
+			<br><br>
+			<label id="until">Enroll until 30/05/2021</label>
+			
+</div>
+<div id="danies">
+	<div id="lbldenis">
+	<b><label>STEVE JOBS</label></b><br>
+			<div id="lblfounder">
+			<label >Cofounder Apple Inc</label>
+			</div>
+	</div>
+	<div id="para1"><br>
+		<p>Creativity is just connecting things. When you ask 
+		creative people how they did something, they feel a little 
+		guilty because they didn't really do it, they just saw something
+		</div>
+	
+</div>
+<div id="danies">
+	<div id="lbldenis">
+	<b><label>STEVE JOBS</label></b><br>
+			<div id="lblfounder">
+			<label >Cofounder Apple Inc </label>
+			</div>
+	</div>
+	<div id="para1"><br>
+		<p>Creativity is just connecting things. When you ask creative 
+		people how they did something, they feel a little guilty because they
+		 didn't really do it, they just saw something.
+		</div>
+	
+</div>
+<div id="danies">
+	<div id="lbldenis">
+	<b><label>STEVE JOBS</label></b><br>
+			<div id="lblfounder">
+			<label >Cofounder Apple Inc</label>
+			</div>
+	</div>
+	<div id="para1"><br>
+		<p>Creativity is just connecting things. When you ask creative 
+		people how they did something, they feel a little guilty because 
+		they didn't really do it, they just saw something.
+		</div>
+	
+</div>
+<div id="recent"><br><br><br><br>
+	<div id="lblrecentcourses">
+		<label >Recent Courses</label>
+		
+		<div id="inside">
+		<a href="/c">
+		<img src="../img/cprogram.jpg" id="c"><br><br></a>
+		<lable id="lblcomm"><center><b>C Language</b></center></lable>
+		<p id="common">Registrations are open for upcoming batches	</p><br>		</div>
+		<div id="inside1">
+		<a href="/cpp">
+		<img src="../img/c++.jpg" id="c"><br><br></a>
+		<lable id="lblcomm"><center><b>C++</b></center></lable>
+		<p id="common">Registrations are open for upcoming batches	</p><br>		</div>
+		<div id="inside2">
+		<a href="/python">
+		<img src="../img/python.jpg" id="c"><br><br></a>
+		<lable id="lblcomm"><center><b>Python</b></center></lable>
+		<p id="common">Registrations are open for upcoming batches	</p><br>
+		</div>
+		
+	</div>
+</div>
+
+
+	<div id="footer"><br>
+	<label id="lblfooter">@Copyright @2020-2021 technorbit infosystems - All Right Reserved</label>
+	
+	</div>
+<script>
+function popup(){
+	alert("You have to register first to enroll this course !!");
+    }
+</script>
+
+</body>
+</html>

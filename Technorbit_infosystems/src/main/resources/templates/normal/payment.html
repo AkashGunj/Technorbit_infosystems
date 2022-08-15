@@ -1,0 +1,251 @@
+<html>
+<head>
+</head>
+<style>
+
+.body{
+	
+	background-color: rgb(248, 249, 250) ;
+}
+
+
+
+
+#oimg{
+
+	border:1px solid white;
+	height: 200px;
+	Width:500px;
+	position: absolute;
+	
+	
+}
+#terms{
+	border:1px solid white;
+	height: 50px;
+	Width:500px;
+	position: absolute;
+	margin-top:5%;
+	
+}
+
+#technoimg{
+	border:1px solid white;
+	height: 700px;
+	width: 500px;
+	background-size: cover;
+}
+
+#login{
+	border:1px solid grey;
+	
+	height: 750px;
+	width:580px;
+
+
+	margin-left: 56%;
+	position: absolute;
+}
+#lblregister{
+	font-size: 30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	margin-top: 2%;
+	margin-left: 40%;
+	
+}
+#lblwelback{
+	margin-left: 40%;
+	margin-top: 10px;
+}
+#txtname{
+	
+	margin-top:4%;
+	width: 80%;
+	box-sizing: "border-box";
+	border: none;
+    border-bottom: 2px solid orange;
+    font-size: 20px;
+}
+#rbtn{
+	
+	margin-top:30px;
+	margin-left: 70px;
+	
+}
+
+#btnsub {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 37%;
+}
+#txt{
+	
+	color: red;
+	font-size: 20px;
+	margin-left: 10%;
+}
+#lblc{
+	color:red;
+	font-size:40px;
+	margin-left:23%;
+}
+#para{
+	
+	font-size:19px;
+}
+#lblterm{
+	margin-left:72%;
+	
+	
+}
+#btn{
+	margin-left:55%;
+	
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#lblforgot{
+	
+	margin-left: 37%;
+}
+#btnsubmit {
+  	width: 35%;
+  padding: 12px 20px;
+  
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ margin-left:160px;
+ background-color: orange;
+ font-size: 18px;
+}
+#txtid {
+  	width: 80%;
+  padding: 12px 20px;
+  margin-top:55%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+#txtamt{
+	width: 80%;
+  padding: 12px 20px;
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+input[type=date], select {
+  	width: 80%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+ margin-top:2%;
+}
+#lbldate{
+	margin-top:430px;
+	margin-left:900px;
+	padding-left:50px;
+}
+#myForm{
+	height:900px;
+}
+</style>
+
+<body>
+
+<ul>
+  <li><a href="/user/index">Home</a></li>
+  <li><a href="/user/courses">Courses</a></li>
+  <li><a href="/user/gallery">Gallery</a></li>
+  <li><a href="/user/quiz">Quiz</a></li>
+    <li><a href="/user/about">About Us</a></li>
+      <li><a href="/user/contactus">contactus</a></li>
+  <li><a href="/user/comment">Comment</a></li>
+  <li style="float:right"><a href="#">Profile</a></li>
+  <li style="float:right"><a href="/logout">Logout</a></li>
+</ul>
+
+
+
+<div id="oimg">
+<img src="../img/payment.jpeg" id="technoimg">
+</div>
+
+
+<div id="login">
+	<div id="lblregister">
+	<label>Payment</label>
+	</div>
+	
+	<div id="terms" >	
+	<p id="para"> 1. Scan QR code<br><br>
+	2. Pay Registration fees 500 Rs.(for 7 days demo lectures).<br><br>
+	3. If you are not satisfied with Technorbit Infosystems then your fees will be reimbersed accordingly.<br><br>
+	4. After successfull payment, enter transaction ID below to verify with Admin.<br><br>
+	5. After successfull verification, you will get the access for selected course session (On Technorbit Infosystem App).<br><br>
+	</p>
+	</div><br>
+	
+	<form  id="myForm" action "" th:action="@{/user/do_payment}" method="post">
+	<div id="outerdiv">
+	
+	  <div class="form-group">
+                                            <input id="txtid" type="text" class="form-control" placeholder="Enter Transaction ID here *"  name="transactionId" required="" />
+                                        <br>
+                                        
+                                        <label id="lbldate">Enter Date for Payment</label><br>
+                                        <input type="date" class="form-control"  placeholder="Enter date for comment *"  name="transactionDate" required="" /><br><br>
+           							   <input id="txtamt" type="text" class="form-control"  placeholder="Enter Amount you paid *"  name="fee_paid" required="" /><br><br>
+           							    <input id="btnsubmit" type="submit" class="form-control" value="Pay">
+           							   	</div>
+		
+	</form>
+           
+   
+                                        
+
+</body>
+</html>

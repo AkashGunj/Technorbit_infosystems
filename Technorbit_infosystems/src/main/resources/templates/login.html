@@ -1,0 +1,219 @@
+<html>
+<head>
+</head>
+<style>
+
+.body{
+	
+	background-color: rgb(248, 249, 250) ;
+}
+
+#lock{
+	position: absolute;
+	z-index: -1;
+	margin-left: 72.5%;
+	margin-top: 60px;
+}
+
+#btnsub {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 37%;
+}
+#oimg{
+
+	border:1px solid white;
+	height: 630px;
+	Width:740px;
+	position: absolute;
+}
+
+#technoimg{
+	
+	height: 630px;
+	width: 740px;
+}
+
+#login{
+	border:1px solid grey;
+	
+	height: 630px;
+	width:580px;
+	z-index: -1;
+	margin-left: 56%;
+	position: absolute;
+}
+#lbllogin{
+	
+	font-size: 30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	margin-top: 30%;
+	margin-left: 40%;
+	
+}
+#lblusername{
+	
+	font-size: 25px;
+		font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	margin-top: 40px;
+	margin-left: 120px;
+	
+	
+}
+#lblpassword{
+	
+	font-size: 25px;
+		font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	margin-left: 125px;
+	
+	
+	
+}
+#txtusername{
+	
+	margin-left:10%;
+	
+	box-sizing: "border-box";
+	border: none;
+    border-bottom: 2px solid red;
+    font-size: 20px;
+}
+#txtpassword{
+	
+	margin-left:10%;
+	box-sizing: "border-box";
+	border: none;
+    border-bottom: 2px solid red;
+    font-size: 20px;
+}
+#lockimg{
+	 border-radius: 50%;
+	height: 120px;
+	width: 120px;
+}
+#lblforgot{
+	
+	margin-left: 37%;
+}
+#lblnew{
+	margin-left:9%;
+}
+#register{
+	
+	 background-color: #f44336;
+  color: white;
+  padding: 14px 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 9.3%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+#txtwarn{
+	
+	border:1px solid red;
+	height:20px;
+	width:550px;
+	margin-top:10px;
+	margin-left: 15px;
+	text-align: center;
+	background-color: yellow;
+}
+</style>
+
+<body>
+
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="courses">Courses</a></li>
+  <li><a href="gallery">Gallery</a></li>
+  <li><a href="about">About Us</a></li>
+  <li><a href="contactus">Contact</a></li>
+  <li><a href="/admin/index">Admin</a></li>
+  <li style="float:right"><a href="/user/index">Signin</a></li>
+</ul>
+
+<div id="lock">
+<img src="../img/logo.jpg" id="lockimg">
+</div>
+<br>
+
+
+<div id="oimg">
+<img src="../img/tehnologin.webp" id="technoimg">
+</div>
+
+<div id="login">
+	<div id="lbllogin">
+	<label>Sign in</label>
+	</div>
+	
+	<form  id="myForm"  th:action="@{/signin}" method="post">
+	
+	<div id="txtwarn" th:if="${param.error}" class="alert alert-danger">
+	Invalid username and password
+	</div>
+	
+	<div id="txtwarn" th:if="${param.logout}" class="alert alert-danger">
+	You have been logged out
+	</div>
+	
+	
+	<div id="lblusername">
+	<label>Username</label>
+	<input type="text" id="txtusername" name="username" placeholder="Username">
+	</div>
+	<br><br><br>
+	<div id="lblpassword">
+	<label>Password</label>
+	<input type="password" id="txtpassword" name="password" placeholder="Password">
+	</div><br><br><br>
+	
+	<div>
+	<button type="submit" id="btnsub" class="btn btn-primary"  >Login</button><br><br>
+	</div>
+	<a th:href="@{/forgot}" id="lblforgot">Forgot Password ?</a><br><br>
+
+	<label id="lblnew">------------------------------New to TechnOrbit?------------------------------</label>
+	<br><br>
+	<a href="/register1" id="register">Create Your TechnOrbit Account</a>
+	</form>
+</div>
+
+
+</body>
+</html>

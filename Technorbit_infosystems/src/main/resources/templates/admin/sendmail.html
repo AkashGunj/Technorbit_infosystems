@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height:700px;
+  background-color: #f1f1f1;
+  position: absolute;
+  z-index: 1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+#outerdiv{
+	border:1px solid white;
+	height:500px;
+	width:85%;
+	margin-left:200px;
+}
+button[type=submit] {
+  	width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ margin-left:15%;
+ background-color: orange;
+ font-size: 18px;
+}
+input[type=text], select {
+  	width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ margin-left:15%;
+}
+input[type=file], select {
+  	width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ margin-left:15%;
+}
+#area{
+	height:250px;
+		width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left:15%;
+ }
+#lblsub{
+	
+	color: black;
+	font-size:50px;
+	margin-left:520px;
+	
+
+}
+</style>
+</head>
+<body>
+
+
+
+<ul>
+	 <li><a href="/admin/subscribe">Subscribers</a></li>
+	 <li><a href="/admin/sendmail">SendMail to Subscribers</a></li>
+	<li><a href="/admin/registered">Registered Students</a></li>
+	 <li><a href="/admin/EnrolledList">EnrolledList</a></li>	
+	<li><a href="/admin/comment">Notification for student</a></li>
+ 	 <li><a href="/admin/contact_us">User's Query</a></li>
+ 	 <li><a href="/admin/sendQuery">Send Email to User</a></li>
+  
+  <li><a href="/logout">Logout</a></li>
+</ul>
+
+
+	<label id="lblsub">Send Email To Subscribers</label>
+	
+	<form  id="myForm" action "" th:action="@{/admin/do_mail}" method="post">
+	<div id="outerdiv">
+	
+	  <div class="form-group">
+                                            <input type="text" class="form-control" id="contactaddr" placeholder="Enter Subject here *"  name="txtsubject" required="" />
+                                        </div><br>
+                                        
+  										<input type="file" id="myfile" name="file" required=""><br><br>
+                                        <textarea id="area" rows="4" cols="50" placeholder="Your Messages Here..." name="text" required=""></textarea><br>
+                                             <button type="submit" id="btnsub" class="btn btn-primary">Send</button><br><br>
+		
+		</div>
+		
+	</form>
+	
+
+
+</body>
+</html>

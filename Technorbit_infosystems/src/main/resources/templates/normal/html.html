@@ -1,0 +1,528 @@
+<html>
+<head>
+</head>
+<style>
+
+.body{
+	background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#course{
+	
+	border:1px solid bisque;
+	height:50%;
+	width:60%px;
+	background-image: url(../img/course.jpg);
+}
+
+#lblcourse{
+		
+	color: white;
+	font-size:50px;
+	
+}
+#inner{
+	margin-left: 42%;
+	margin-top:10%;
+}
+#path{
+	color: white;
+	font-size:20px;
+	margin-left:10px;
+	
+	
+}
+
+
+#footer{
+	
+	border:1px solid black;
+	background-color: black;
+	color: white;
+	margin-top: 5%;
+	height: 60px;
+	width:100%;
+	text-align: center;
+	
+
+}
+#lblfooter{
+	font-size: 20px;
+}
+
+#heading{
+	
+	height: 80px;
+	width: 30%;
+	margin-top:40px;
+	margin-left: 30px;
+	
+}
+#lblc{
+	
+	color:black;
+	font-size:50px;
+	margin-top: 10px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+
+
+}
+#first{
+	
+	height: 60px;
+	width: 200px;
+	margin-left:30px;
+	margin-top:12px;
+	position: absolute;
+}
+#second{
+	
+	height: 60px;
+	width: 200px;
+	margin-left:300px;
+	margin-top:20px;
+	position: absolute;
+	
+}
+#lbldate{
+	color: black;
+	
+	font-size: 18px;
+	
+}
+#lbltime{
+	color: grey;
+	
+	font-size: 15px;
+	
+}
+#desc{
+	border:1px solid orange;
+	height: 1400px;
+	width: 850px;
+	margin-top:100px;
+	margin-left:30px;
+	padding-left: 10px;
+	padding-top: 10px;
+	position: absolute;
+}
+#lblcoursedesc{
+	color: black;
+	font-size:30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#para{
+	color: grey;
+	font-size:20px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	line-height: 30px;
+}
+#para1{
+	color: grey;
+	font-size:18px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	line-height: 30px;
+	margin-left:10px;
+}
+#lblcertification{
+	
+	color: black;
+	font-size:30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	
+}
+#table{
+	column-gap:20px;
+}
+table{
+	 border-collapse: separate;
+    border-spacing: 0 1em;
+    
+}
+#enroll{
+	border:1px solid orange;
+	height: 400px;
+	width: 400px;
+	margin-left:69%;
+	margin-top: 7%;
+	
+}
+#danies{
+	border:2px solid white;
+	animation: blink 1s;
+    animation-iteration-count: 180;
+	height: 300px;
+	width: 400px;
+	margin-left:69%;
+	margin-top: 3%;
+	
+}
+@keyframes blink { 50% { border-color:red ; }  }
+#lblfee{
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#lblrs{
+	margin-left: 80px;
+	font-size: 30px;
+	color: orange;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#lbllect{
+	
+	margin-left: 20px;
+	font-size: 18px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	
+}
+#lbllecture{
+	margin-left: 60%;
+}
+#lbladv{
+	margin-left: 55%;
+}
+#lblstu{
+	margin-left: 43%;
+}
+#lbllan{
+	margin-left: 26%;
+}
+#register{
+	
+	 background-color: orange;
+  color: white;
+  padding: 14px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 9.3%;
+  font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+#until{
+	color: gray;
+	 font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	 margin-left: 120px;
+	 font-size:15px;
+}
+#lbldenis{
+	font-size: 25px;
+	 font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	 color:black;
+	 margin-left: 45%;
+	 margin-top: 15px;
+}
+#lblfounder{
+	font-size:15px;
+	color: grey;
+	margin-top:5px;
+	margin-left:7px;
+}
+#recent{
+	border: 1px solid orange;
+	height:600px;
+	width: 1300px;
+	margin-top:2%;
+	margin-left: 2%;
+	background-color:lightgoldenrodyellow;
+}
+#lblrecentcourses{
+	font-size: 50px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	text-align: center;
+	
+}
+#inside{
+border:1px solid orange;
+height:430px;
+width:400px;
+color:white;
+background-color:black;
+margin-left: 20px;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#inside1{
+border:1px solid orange;
+height:430px;
+width:400px;
+color:white;
+background-color:black;
+margin-left: 33.2%;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#inside2{
+border:1px solid orange;
+height:430px;
+width:400px;
+color:white;
+background-color:black;
+margin-left: 65%;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#c{
+height:280px;
+width:400px;
+}
+#lblcomm{
+	color: white;
+	font-size:30px;
+}
+#common{
+	color: grey;
+	font-size: 15px;
+}
+
+
+</style>
+
+<body style="background-color:rgb(255, 255, 255);">
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="courses">Courses</a></li>
+  <li><a href="gallery">Gallery</a></li>
+  <li><a href="about">About Us</a></li>
+  <li><a href="contactus">Contact</a></li>
+  <li><a href="/admin/index">Admin</a></li>
+  <li style="float:right"><a href="/user/index">Signin</a></li>
+</ul>
+
+	<div id="course">
+		<div id="inner">
+		<label id="lblcourse">Course Detail</label><br><br>
+		<label id="path">Home -> Courses -> HTML5</label>
+		</div>
+	</div>
+	
+	<div id="heading">
+	<b><label id="lblc">HTML5</label></b>
+	</div>
+	
+	<div id="first">
+	<b><label id="lbldate">04 / June / 2021</label><br></b>
+	<label id="lbltime">8.00 AM / 11.00 PM</label>
+	</div>
+	
+<div id="desc">
+		<div id="lblcoursedesc">
+		<b><label>Course Descriptions</label></b>
+		</div>
+		
+		<div id="para">
+		<p> HTML stands for Hyper Text Markup Language. It is used to design 
+		web pages using markup language. HTML is the combination of Hypertext 
+		and Markup language. Hypertext defines the link between the web pages. 
+		Markup language is used to define the text document within tag which defines
+		 the structure of web pages. HTML 5 is the fifth and current version of HTML. 
+		 It has improved the markup available for documents 
+		and has introduced application programming interfaces(API) and Document Object Model(DOM).</p><br>
+		  </p>
+		</div>
+	
+		<div id="lblcertification">
+		<b><label>Certifications</label></b>
+		</div>
+		<div id="para">
+		<p>In this professional Certificate program, designed by the TechnOrbit Infosystems, you will master the primary programming languages for Web development, HTML5, CSS and JavaScript. 
+		You will learn how to build interactive and responsive user experiences, deepen your knowledge of the 3 languages.
+		</p>
+		</div>
+		
+		<div id="lblcoursedesc">
+		<b><label>Syllabus</label></b>
+		</div>
+		<br>
+		<div id="table">
+		<table  style="font-family:roboto,'Noto Sans Myanmar UI',arial,sans-serif ;font-size: 18px;">
+		
+		<th>
+		<span class="dot"><tr><td style="color: grey;">Topic 01</td><td></td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td> HTML - Introduction </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></span>
+		<td style="color: grey;">Topic 16</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Hidden Fields</td></tr>
+		<tr><td style="color: grey;">Topic 02</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Elements</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 17</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Password </td></tr>
+		<tr><td style="color: grey;">Topic 03</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Tags </td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 18</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Reset</td></tr>
+		<tr><td style="color: grey;">Topic 04</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Text </td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 19</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Submit </td></tr>
+		<tr><td style="color: grey;">Topic 05</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Formatting</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 20</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Checkboxes </td></tr>
+		<tr><td style="color: grey;">Topic 06</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Pre</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 21</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Radio</td></tr>
+		<tr><td style="color: grey;">Topic 07</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Attributes </td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 22</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Select</td></tr>
+		<tr><td style="color: grey;">Topic 08</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td> HTML - Font</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 23</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Hidden Fields </td></tr>
+		<tr><td style="color: grey;">Topic 09</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Text Links </td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 24</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Upload </td></tr>
+		<tr><td style="color: grey;">Topic 10</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Comments</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 25</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Textarea</td></tr>
+		<tr><td style="color: grey;">Topic 11</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td> HTML - Lists </td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 26</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>Special Tags </td></tr>
+		<tr><td style="color: grey;">Topic 12</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td> HTML - Images </td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 27</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Body </td></tr>
+		<tr><td style="color: grey;">Topic 13</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Image Links</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 28</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Meta</td></tr>
+		<tr><td style="color: grey;">Topic 14</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Tables</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 29</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Style</td></tr>
+		<tr><td style="color: grey;">Topic 15</td><td></td><td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Bgcolor </td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		<td style="color: grey;">Topic 30</td><td><td></td></td><td></td><td></td><td></td><td><td></td><td><td></td><td>HTML - Div</td></tr>
+		
+		</th>
+		</table>
+		</div>
+	
+</div>
+
+		<div id="enroll">
+			<div id="lblfee">
+				<label>Course Fee</label>
+					
+					<lable id="lblrs"> Rs.5000 Only</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Lectures</label>
+					<lable id="lbllecture">30 Unit</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Duration</label>
+					<lable id="lbllecture">2 Months</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Skill Level</label>
+					<lable id="lbladv">Advanced</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Max Students</label>
+					<lable id="lblstu">30 Students</lable><br>	<br>
+			</div>
+			<div id="lbllect">
+			<label >Language</label>
+					<lable id="lbllan">English / Marathi / Hindi</lable><br>	<br>
+			</div><br>
+			
+			<a href="/register1" id="register"  onclick="popup();">Take This Course</a>
+			<br><br>
+			<label id="until">Enroll until 30/05/2021</label>
+			
+</div>
+<div id="danies">
+	<div id="lbldenis">
+	<b><label>Tim Berners-Lee</label></b><br>
+			<div id="lblfounder">
+			<label > inventor of the World Wide Web </label>
+			</div>
+	</div>
+	<div id="para1"><br>
+		<p>The world's urban poor and the illiterate are going to be increasingly
+		 disadvantaged and are in danger of being left behind. The web has added a 
+		 new dimension to the gap between the first world and the developing world.
+		  We have to start talking about a human right to connect.
+
+		</div>
+	
+</div>
+<div id="danies">
+	<div id="lbldenis">
+	<b><label>Tim Berners-Lee</label></b><br>
+			<div id="lblfounder">
+			<label > inventor of the World Wide Web</label>
+			</div>
+	</div>
+	<div id="para1"><br>
+		<p>What is a Web year now, about three months? And when people can browse around,
+		 discover new things, and download them fast, when we all have agents - 
+		 then Web years could slip by before human beings can notice.
+
+		</div>
+	
+</div>
+<div id="danies">
+	<div id="lbldenis">
+	<b><label>Tim Berners-Lee</label></b><br>
+			<div id="lblfounder">
+			<label > inventor of the World Wide Web</label>
+			</div>
+	</div>
+	<div id="para1"><br>
+		<p>We shouldn't build a technology to colour, or grey out, what people say. 
+		The media in general is balanced, 
+		although there are a lot of issues to be addressed that the media rightly pick up on.
+		</div>
+	
+</div>
+<div id="recent"><br><br><br><br>
+	<div id="lblrecentcourses">
+		<label >Recent Courses</label>
+		
+		<div id="inside">
+		<a href="/css">
+		<img src="../img/css.jpg" id="c"><br><br></a>
+		<lable id="lblcomm"><center><b>CSS3</b></center></lable>
+		<p id="common">Registrations are open for upcoming batches	</p><br>		</div>
+		<div id="inside1">
+		<a href="/jquery">
+		<img src="../img/jquery.jpg" id="c"><br><br></a>
+		<lable id="lblcomm"><center><b>JQuery</b></center></lable>
+		<p id="common">Registrations are open for upcoming batches	</p><br>		</div>
+		<div id="inside2">
+		<a href="/javascript">
+		<img src="../img/jscript.jpg" id="c"><br><br></a>
+		<lable id="lblcomm"><center><b>JavaScript</b></center></lable>
+		<p id="common">Registrations are open for upcoming batches	</p><br>
+		</div>
+		
+	</div>
+</div>
+
+	
+	
+	
+
+
+	<div id="footer"><br>
+	<label id="lblfooter">@Copyright @2020-2021 technorbit infosystems - All Right Reserved</label>
+	
+	</div>
+<script>
+function popup(){
+	alert("You have to register first to enroll this course !! Click ok to Register with us :)");
+    }
+</script>
+
+</body>
+</html>

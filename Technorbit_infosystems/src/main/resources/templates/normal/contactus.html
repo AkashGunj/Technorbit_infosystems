@@ -1,0 +1,257 @@
+<html>
+<head>
+</head>
+<style>
+
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+
+
+
+#footer{
+	
+	border:1px solid black;
+	background-color: black;
+	color: white;
+	margin-top: 5%;
+	height: 60px;
+	width:100%;
+	text-align: center;
+	
+
+}
+#contactus{
+	color: Green;
+	font-size: 20px;
+	text-align:center;
+}
+
+
+#lblfooter{
+	font-size: 20px;
+}
+
+#map{
+	
+	height:800px;
+	width:1330px;
+	position: absolute;
+	z-index: 1;
+}
+#course{
+	
+	border:1px solid bisque;
+	height:50%;
+	width:60%px;
+	background-image: url(../img/course.jpg);
+}
+#inner{
+	margin-left: 42%;
+	margin-top:10%;
+}
+#lblcourse{
+	
+	color: white;
+	font-size:50px;
+	
+}
+#path{
+	color: white;
+	font-size:20px;
+	margin-left:10px;
+	
+	
+}
+#maindiv{
+	border:1px solid white;
+	height:550px;
+	width:1100px;
+	margin-left:8%;
+	margin-top:50%;
+}
+#first{
+	
+	border:1px solid white;
+	height:550px;
+	width:550px;
+	position: absolute;
+	z-index: 1;
+	background-color: white;;
+}
+#second{
+	border:1px solid white;
+	height:550px;
+	width:550px;
+	margin-left:550px;
+	background-color: white;;
+	z-index: 1;
+	position: absolute;
+	
+}
+#lblget{
+	font-size: 36px;
+	font-family: "Roboto Slab", sans-serif;
+	margin-top:20px;
+	margin-left:15%;
+}
+#para{
+	margin-left:15%;
+	font-size:18px;
+	color:#636363;
+	line-height: 33px;
+	font-family: "Roboto Slab", sans-serif;
+}
+input[type=text], select {
+  	width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ margin-left:15%;
+}
+input[type=email], select {
+  	width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ margin-left:15%;
+}
+
+input[type=submit] {
+  	width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ margin-left:15%;
+ background-color: orange;
+ font-size: 18px;
+}
+#area{
+	
+		width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left:15%;
+ 
+}
+#lblno{
+	font-size: 30px;
+	color: orange;
+	margin-left:15%;
+}
+
+</style>
+
+<body style="background-color:white;">
+<ul>
+  <li><a href="/user/index">Home</a></li>
+  <li><a href="/user/courses">Courses</a></li>
+  <li><a href="/user/gallery">Gallery</a></li>
+  <li><a href="/user/quiz">Quiz</a></li>
+    <li><a href="/user/about">About Us</a></li>
+      <li><a href="/user/contactus">contactus</a></li>
+  <li><a href="/user/comment">Comment</a></li>
+  <li style="float:right"><a href="#">Profile</a></li>
+  <li style="float:right"><a href="/logout">Logout</a></li>
+</ul>
+
+	<div id="course">
+		<div id="inner">
+		<label id="lblcourse">Contact Us</label><br><br>
+		<label id="path">Home ->  Contact Us</label>
+		</div>
+	</div>
+
+	<div id="map">
+	<p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.390856223103!2d74.18201791431541!3d19.61058094004828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd002de4308f89%3A0xa7df1dec3ca20fb6!2sTECHNORBIT%20INFOSYSTEMS%20%3A%20The%20Computer%20Programming%20Classes!5e0!3m2!1sen!2sin!4v1623076132171!5m2!1sen!2sin" width="1330" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</p>
+	</div>
+	
+	<div id="maindiv">
+		
+		<div id="first"><br><br><br><br>
+		<label id="lblget">Get In Touch</label><br>
+		<p id="para">We love hearing from readers. We really appreciate<br> you taking the time to get in touch </p>
+		
+		<form  id="myForm" action "" th:action="@{/user/do_contactus}" method="post" th:object="${contact_us}">
+		<div id="contactus" th:if="${session.messsage}" th:classappend="${session.messsage.type}" class="alert" role="alert">
+
+		<p class="text-center" th:text="${session.messsage.content}"></p>
+
+		<th:block th:next="${#session.removeAttribute('messsage')}"></th:block>
+
+		</div>
+
+
+		<div class="form-group">
+                                            <input type="text" class="form-control" id="contactaddr" placeholder="Your Name *"  name="contactName" required="" />
+                                        </div><br>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="contactemail" placeholder="Your Email id *" name="contactemail" required=""/><br>
+                                        </div><br>
+                                        <textarea id="area" rows="4" cols="50" placeholder="Your Messages Here..." name="contactquery" required=""></textarea><br>
+                                             <input type="submit" class="btnRegister"  value="submit"  />
+		</div>
+		
+		<div id="second"><br><br><br><br>
+		<label id="lblget">Contact</label><br>
+		<p id="para">Adrress : Opposite Amrutvahini College, Nashik Pune<br> Highway, Sangamner 422605 </p>
+		<label id="para">Call directly :</label><br>
+		<label id="lblno"><b>(+91) 95 45 53 58 57</b></label><br><br><br><br><br><br>
+		<label id="lblno"><b>info@technorbit.in</b></label><br><br>
+		<label id="lblno"><b>technorbitinfosystems@gmail.com</b></label><br><br>
+		</div>
+	</div>
+
+
+	<div id="footer"><br>
+	<label id="lblfooter">@Copyright @2020-2021 technorbit infosystems - All Right Reserved</label>
+	
+	</div>
+
+</body>
+</html>

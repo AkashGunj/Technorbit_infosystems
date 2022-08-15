@@ -1,0 +1,200 @@
+<html>
+<head>
+</head>
+<style>
+
+.body{
+	
+	background-color: rgb(248, 249, 250) ;
+}
+
+
+
+
+#oimg{
+
+	border:1px solid white;
+	height: 200px;
+	Width:500px;
+	position: absolute;
+	margin-top:5%;
+	margin-left:7%;
+}
+#terms{
+	border:1px solid white;
+	height: 50px;
+	Width:500px;
+	position: absolute;
+	margin-top:5%;
+	margin-left:7%;
+}
+
+#technoimg{
+	
+	height: 400px;
+	width: 500px;
+}
+
+#login{
+	border:1px solid grey;
+	
+	height: 630px;
+	width:580px;
+	z-index: -1;
+	margin-left: 56%;
+	position: absolute;
+}
+#lblregister{
+	font-size: 30px;
+	font-family:  roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	margin-top: 2%;
+	margin-left: 40%;
+	
+}
+#lblwelback{
+	margin-left: 40%;
+	margin-top: 10px;
+}
+#txtname{
+	margin-left:11%;
+	margin-top:4%;
+	width: 80%;
+	box-sizing: "border-box";
+	border: none;
+    border-bottom: 2px solid orange;
+    font-size: 20px;
+}
+#rbtn{
+	
+	margin-top:30px;
+	margin-left: 70px;
+	
+}
+#lblterm{
+	margin-left:30%;
+}
+#btnsub {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 37%;
+}
+#txt{
+	
+	color: red;
+	font-size: 20px;
+	margin-left: 10%;
+}
+#lblc{
+	color:red;
+	font-size:40px;
+	margin-left:23%;
+}
+#para{
+	
+	font-size:19px;
+}
+#lblterm{
+	margin-left:30%;
+	margin-top:50%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#lblforgot{
+	
+	margin-left: 37%;
+}
+</style>
+
+<body>
+
+<ul>
+  <li><a href="/user/index">Home</a></li>
+  <li><a href="/user/courses">Courses</a></li>
+  <li><a href="/user/gallery">Gallery</a></li>
+  <li><a href="/user/quiz">Quiz</a></li>
+    <li><a href="/user/about">About Us</a></li>
+      <li><a href="/user/contactus">contactus</a></li>
+  <li><a href="/user/comment">Comment</a></li>
+  <li style="float:right"><a href="#">Profile</a></li>
+  <li style="float:right"><a href="/logout">Logout</a></li>
+</ul>
+
+
+
+
+<div id="oimg">
+<img src="../img/cprogram.jpg" id="technoimg">
+<label id="lblc">C Programming</label>
+</div>
+
+
+<div id="login">
+
+	<form  id="myForm" action "" th:action="@{/user/do_enroll}" method="post">
+	<div id="txt" th:if="${session.messsage}" th:classappend="${session.messsage.type}" class="alert" role="alert">
+
+	<p class="text-center" th:text="${session.messsage.content}"></p>
+
+	<th:block th:next="${#session.removeAttribute('messsage')}"></th:block>
+
+	</div>
+	
+	<div id="lblregister">
+	<label>Enroll Course</label>
+	</div>
+	
+<div id="terms" >	
+<p id="para"> 1. You must have to pay 500/- Registration fees. (This includes 7 demo lectures, if student not satisfied, 
+Registration fees will be reimbersed.)<br><br>
+2. Your all installment details will be provided to you through registered mobile no./mail.<br><br>
+3.You can cancel your enrollment anytime you want ( The amount of course will be reimbersed to you accordingly.)<br>
+
+</p>
+</div>
+
+ <div class="form-group form-check text-center" id="lblterm">
+       <br><input type="checkbox" name="agreement" class="form-check-input" id="agreement" />
+        <label for="agreement">Accept terms and conditions</label> 
+       </div><br>
+       <button type="submit" id="btnsub" class="btn btn-primary">Enroll</button><br><br>
+       <a href="/user/index" id="lblforgot">Go to Login</a><br><br>
+</div>                                    	
+                                        
+     
+                                        
+
+</body>
+</html>

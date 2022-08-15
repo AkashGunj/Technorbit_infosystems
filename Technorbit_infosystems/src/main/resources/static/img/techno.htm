@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Theme Page Title -->
+        <title>technOrbit Infosystems | C Language | CPP Language | Java</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="jrbthemes.com">
+
+        <script src="techno_files/html5shiv.js"></script>
+        <script src="techno_files/respond.js"></script>
+
+        <!-- Favicon  -->
+        <link href="http://technorbit.in/assets/icon/RA_logo.png" rel="icon" sizes="48x48">
+        <link href="http://technorbit.in/assets/icon/RA_logo.png" rel="icon" sizes="32x32">
+
+        <!-- REVOLUTION LAYERS STYLES -->
+        <link rel="stylesheet" type="text/css" href="techno_files/layers.css">
+        <link rel="stylesheet" type="text/css" href="techno_files/settings.css">
+
+        <!-- Link Style -->
+        <link rel="stylesheet" type="text/css" href="techno_files/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="techno_files/custom.css">
+        <link rel="stylesheet" type="text/css" href="techno_files/responsive.css">
+        <link rel="stylesheet" type="text/css" href="techno_files/animate.css">    
+        <link rel="stylesheet" type="text/css" href="techno_files/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="techno_files/slick.css">
+
+        <link rel="icon" type="image/png" href="http://technorbit.in/assets/images/RA_logo.png">
+        <style>
+            .has-error
+            {
+                border-color:#cc0000;
+                background-color:#ffff99;
+            }
+        </style>
+    </head>
+
+    <body class="header-scroll">
+        
+        <!-- group-slide -->
+        <div class="group-header">
+            <!-- Header -->
+            <header id="header" class="header clearfix">
+                <div class="header-group clearfix">
+                    <div id="logo" class="logo">
+                        <a href="http://technorbit.in/" rel="home">
+                            <img src="techno_files/logo.htm" alt="image">
+                        </a>
+                    </div>
+                    <!-- /.logo -->
+                                             <div class="group-icon-nav">
+                            <div class="login">
+                                <a data-toggle="modal" href="#popup_login" title="">Login</a>
+                            </div>
+                        </div>
+                                        <!-- /.group-icon-nav -->
+
+                    <div class="nav-group">
+                        <div class="btn-menu">
+                            <span></span>
+                        </div>
+                        <!-- //mobile menu button -->
+
+                        <nav id="menuzord" class="menuzord">
+                            <ul class="menu">
+                                <li id="index">
+                                    <a href="http://technorbit.in/">HOME</a>
+                                </li>
+                                <li id="courses">
+                                    <a href="http://technorbit.in/courses">COURSES</a>
+                                </li>
+                                <li id="downloads">
+                                    <a href="http://technorbit.in/downloads">DOWNLOADS</a>
+                                </li>
+                                <li id="event">
+                                    <a href="http://technorbit.in/event">EVENTS</a>
+                                </li>
+                                <li id="gallery">
+                                    <a href="http://technorbit.in/gallery"> GALLERY</a>
+                                </li>
+                                <!--<li id="blog">
+                                    <a href="/blog">BLOG</a>
+                                </li>-->
+                                <li id="about-us">
+                                    <a href="http://technorbit.in/about-us">ABOUT US</a>
+                                </li>
+                                <li id="contact">
+                                    <a href="http://technorbit.in/contact">CONTACT</a>
+                                </li>
+                                 <li id="contact">
+                                    <a href="http://technorbit.in/adminpanel">ADMIN</a>
+                                </li>
+                            </ul>
+                            <!-- /.menu -->
+                        </nav>
+                        <!-- /.mainnav -->
+                    </div>
+                    <!-- /.nav-group -->
+
+                </div>
+                <!-- /.header-group -->
+            </header><div style="height: 80px; display: none;"></div>
+            <!-- /.header -->
+        </div>
+        <!-- /.group-header -->
+        <div class="modal fade group-popuplogin" id="popup_login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body text-center clearfix">
+                        
+                          <form class="form-login" action="/adminpanel/student/login" method="post">
+                            <h3 class="title-formlogin">SIGN IN</h3>
+                            <span class="input-login icon-mail">
+                                <input type="text" placeholder="E-mail" name="email" required="required">
+                            </span>
+                            <span class="input-login icon-pass">
+                                <input type="password" placeholder="Password" name="password" required="required">
+                            </span>
+                            <label class="float-left">
+                                <span class="input-check">
+                                    <input type="checkbox" name="edu" value="1" checked="checked">
+                                    <span class="remember">Remember me</span>
+                                </span>
+                            </label>
+                          
+
+                            <span class="button-login">
+                                <button type="submit" name="submit" class="educa-button">SIGN IN</button>
+                            </span>
+                        </form>
+                        <div class="user-box-footer">
+                            <p>Don't have an account?
+                                <br>
+                                <a href="http://technorbit.in/adminpanel/student/">register now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><main id="main-content" class="main-content" style="margin-bottom: 61px;">
+    <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_1078_1_forcefullwidth" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin: 0px auto; background-color: transparent; padding: 0px; position: absolute; max-height: none; overflow: visible; height: 654px; width: 1349px; left: 0px;">
+        <!-- START REVOLUTION SLIDER 5.3.0.2 auto mode -->
+        <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" style="max-height: none; margin-top: 0px; margin-bottom: 0px; height: 100%;" data-version="5.3.0.2" data-slideactive="rs-3050">
+            <div class="slotholder"></div>
+            <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+                <!-- SLIDE  -->
+
+                <!-- SLIDE 1 -->
+                <li data-index="rs-3049" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off" data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0; background-color: rgba(255, 255, 255, 0);">
+
+                    <!-- MAIN IMAGE -->
+                    <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="assets/images/slides/rb.jpg" alt="" data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;assets/images/slides/rb.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="assets/images/slides/rb.jpg"></div></div>
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 12 -->
+                    <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 130px; top: 187px; z-index: 16;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption title-slide" id="slide-3049-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-95','-95','-95','-95']" data-fontsize="['72','65','45','30']" data-lineheight="['80','65','45','35']" data-fontweight="['400','400','400','400']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:100,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0" data-paddingleft="[0,0,0,0]" style="z-index: 16; white-space: nowrap; visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 80px; border-width: 0px; margin: 0px; padding: 10px 0px 0px; letter-spacing: 0px; font-weight: 400; font-size: 72px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: translate3d(0px, -50px, 0px); transform-origin: 50% 50% 0px;">PPA8 Batch Registration Started
+                    </div></div></div></div>
+
+                    <!-- LAYER NR. 13 -->
+                    <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 345px; top: 163px; z-index: 17;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption position sub-title" id="slide-3049-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-150','-150','-30','-30']" data-fontsize="['18',18','16','14']" data-fontweight="['700','700','700','700']" data-width="660" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;speed&quot;:2000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:100,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap; visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 27px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 700; font-size: 18px; min-height: 0px; min-width: 660px; max-height: none; max-width: 660px; opacity: 1; transform: translate3d(0px, 29px, 0px); transform-origin: 50% 50% 0px;">Educating For Complexity
+                    </div></div></div></div>
+
+                </li>
+
+                <!-- SLIDE 2 -->
+                <li data-index="rs-3050" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off" data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+
+                    <!-- MAIN IMAGE -->
+                    <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="assets/images/slides/2.jpg" alt="" data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;assets/images/slides/2.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="assets/images/slides/2.jpg"></div></div>
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 12 -->
+                    <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 202px; top: 187px; z-index: 16;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption title-slide color-white" id="slide-3050-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-95','-95','-95','-95']" data-fontsize="['72','65','45','30']" data-lineheight="['80','65','45','35']" data-fontweight="['400','400','400','400']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:100,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0" data-paddingleft="[0,0,0,0]" style="z-index: 16; white-space: nowrap; visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 80px; border-width: 0px; margin: 0px; padding: 10px 0px 0px; letter-spacing: 0px; font-weight: 400; font-size: 72px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 50% 0px;">The technOrbit Infosystems
+                    </div></div></div></div>
+
+                    <!-- LAYER NR. 13 -->
+                    <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 345px; top: 163px; z-index: 17;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption position sub-title color-white" id="slide-3050-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-150','-150','-30','-30']" data-fontsize="['18',18','16','14']" data-fontweight="['700','700','700','700']" data-width="660" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;speed&quot;:2000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:100,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap; visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 27px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 700; font-size: 18px; min-height: 0px; min-width: 660px; max-height: none; max-width: 660px; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 50% 0px;">Educating For Complexity
+                    </div></div></div></div>
+
+                </li>
+
+            </ul>
+        <div class="tp-loader off" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-bannertimer" style="visibility: visible; width: 91.1333%; transform: translate3d(0px, 0px, 0px);"></div></div>
+    </div><div class="tp-fullwidth-forcer" style="width: 100%; height: 654px;"></div></div>
+    <!-- END REVOLUTION SLIDER -->
+
+    <div class="container group-form-iconbox">
+        <div class="group-iconbox clearfix">
+            <div class="icon-box style2">
+                <div class="box-content">
+                    <h3 class="box-title">
+                        <i class="ion-checkmark-circled"></i>
+                        <a href="#">5 Days Demo Lectures</a>
+                    </h3>
+                    <p>We provide five days free demo lectures to clarify the depth of subject and teaching of our tutors.</p>
+                </div>
+            </div>
+            <div class="icon-box style2">
+                <div class="box-content">
+                    <h3 class="box-title">
+                        <i class="ion-checkmark-circled"></i>
+                        <a href="#">Free Workshops</a>
+                    </h3>
+                    <p>We organise free workshops for class students. Workshops are based on either subjective or job oriented
+                        like Arduino etc.</p>
+                </div>
+            </div>
+            <div class="icon-box style2">
+                <div class="box-content">
+                    <h3 class="box-title">
+                        <i class="ion-checkmark-circled"></i>
+                        <a href="#">24 X 7 Support</a>
+                    </h3>
+                    <p>Institute provides Moral, Technical and Industrial support to each student. We also provide information related
+                        to interview preparation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="educa-row section-carousel-coursegrid">
+
+        <div class="container-fluid2">
+            <div class="title-section text-center">
+                <h1 class="title">Our Courses</h1>
+            </div>
+            <div class="btn-filter-group text-center clearfix">
+                <button class="btn-filter btn-active" data-filter=".programming">Programming</button>
+                <button class="btn-filter" data-filter=".advanced">Advanced</button>
+                <button class="btn-filter" data-filter=".core">Core</button>
+                <button class="btn-filter" data-filter=".web">Web</button>
+            </div>
+            <div class="main-course course-grid blog-carousel owl-carousel owl-theme owl-loaded">
+                <!-- Programming Section Start -->
+                
+                
+                
+                
+                <!-- Programming Section End -->
+
+                <!-- Advanced Section Start -->
+                
+                
+                
+                
+                <!-- Advanced Section End -->
+
+                <!-- Core Section Start -->
+                
+                
+                
+                
+                <!-- Core Section End -->
+
+                <!-- Web Section Start -->
+                
+                
+                
+                
+                
+                
+                <!-- Web Section End -->
+
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1271px, 0px, 0px); transition: all 0s ease 0s; width: 8261.5px;"><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/jquery">
+                                    <img src="techno_files/web-3.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/jquery">jQuery</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/javascript">
+                                    <img src="techno_files/web-4.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/javascript">Javascript</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/php">
+                                    <img src="techno_files/web-5.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/php">PHP</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/angular">
+                                    <img src="techno_files/web-6.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/angular">Angular +</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item active" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/c-language">
+                                    <img src="techno_files/programming-1.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/c-language">C Language</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item active" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/cpp-language">
+                                    <img src="techno_files/programming-2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/cpp-language">C++ Language</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item active" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/core-java">
+                                    <img src="techno_files/programming-3.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/core-java">Core Java</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item active" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/data_structute">
+                                    <img src="techno_files/technorbit_Data_Structure_Programming.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/data_structute">Data Structure</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item advanced design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/python">
+                                    <img src="techno_files/advanced-1.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/python">Python</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item advanced design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/arduino">
+                                    <img src="techno_files/advanced-2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/arduino">Arduino</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item advanced design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/machine-learning">
+                                    <img src="techno_files/advanced-3.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/machine-learning">Machine Learning</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item advanced design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/raspberry">
+                                    <img src="techno_files/advanced-4.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/raspberry">Raspberry PI Workshop</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item core design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/unix">
+                                    <img src="techno_files/core-1.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/unix">Unix</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item core design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/microprocessor">
+                                    <img src="techno_files/core-2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/microprocessor">X86 Microprocessor</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item core design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/microcontroller">
+                                    <img src="techno_files/core-3.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/microcontroller">8051 Microcontroller</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item core design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/iot">
+                                    <img src="techno_files/technorbit_Internet_of_things_IOT_core-4.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/iot">Internet Of Things</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/html5">
+                                    <img src="techno_files/web-1.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/html5">HTML5</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/css3">
+                                    <img src="techno_files/web-2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/css3">CSS3</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/jquery">
+                                    <img src="techno_files/web-3.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/jquery">jQuery</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/javascript">
+                                    <img src="techno_files/web-4.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/javascript">Javascript</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/php">
+                                    <img src="techno_files/web-5.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/php">PHP</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item" style="width: 287.75px; margin-right: 30px;"><div class="post-item web design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/angular">
+                                    <img src="techno_files/web-6.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/angular">Angular +</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/c-language">
+                                    <img src="techno_files/programming-1.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/c-language">C Language</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/cpp-language">
+                                    <img src="techno_files/programming-2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/cpp-language">C++ Language</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/core-java">
+                                    <img src="techno_files/programming-3.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/core-java">Core Java</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 287.75px; margin-right: 30px;"><div class="post-item programming design business">
+                    <div class="box-item clearfix">
+                        <div class="entry-border">
+                            <div class="feature-post">
+                                <a href="http://technorbit.in/data_structute">
+                                    <img src="techno_files/technorbit_Data_Structure_Programming.jpg" alt="image">
+                                </a>
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post clearfix">
+                                    <a href="http://technorbit.in/data_structute">Data Structure</a>
+                                </h5>
+                                <div class="entry-post">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.entry-border -->
+                    </div>
+                </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="">prev</div><div class="owl-next" style="">next</div></div><div style="display: block;" class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+        </div>
+    </section>
+
+<!--    <section class="educa-row v7 section-latest-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section text-center">
+                        <h1 class="title">Latest News</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="latest-post-grid">
+                        <div class="box-item clearfix">
+                            <div class="entry-border">
+                                <div class="feature-post">
+                                    <a href="#">
+                                        <img src="assets/images/blog/latest/1.jpg" alt="image">
+                                    </a>
+                                </div>
+                                 /.feature-post 
+                                <div class="content-post border-none">
+                                    <h5 class="title-post">
+                                        <a href="blog-details.html">The Future Of Web Design</a>
+                                    </h5>
+                                    <ul class="meta-post style2 clearfix">
+                                        <li class="author">
+                                            <a href="#">Admin</a>
+                                        </li>
+                                        <li class="day">
+                                            <a href="#">November 11, 2016</a>
+                                        </li>
+                                        <li class="comment">
+                                            <a href="#"> 3 Comments</a>
+                                        </li>
+                                    </ul>
+                                     /.meta-post 
+                                    <div class="entry-post">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majori-ty
+                                            have suffered alteration in some form, by injected humour...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                             /.entry-border 
+                        </div>
+                         /.box-item 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="latest-post-list">
+                        <div class="box-item clearfix">
+                            <div class="entry-border">
+                                <div class="feature-post">
+                                    <a href="#">
+                                        <img src="assets/images/blog/latest/2.jpg" alt="image">
+                                    </a>
+                                </div>
+                                 /.feature-post 
+                                <div class="content-post border-none">
+                                    <h5 class="title-post">
+                                        <a href="blog-details.html">How to get better at Learning</a>
+                                    </h5>
+                                    <ul class="meta-post clearfix">
+                                        <li class="author">
+                                            <a href="#">Admin</a>
+                                        </li>
+                                        <li class="day">
+                                            <a href="#">November 11, 2016</a>
+                                        </li>
+                                        <li class="comment">
+                                            <a href="#"> 3 Comments</a>
+                                        </li>
+                                    </ul>
+                                     /.meta-post 
+                                    <div class="entry-post">
+                                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt
+                                            anything embarrassing hidden in the middle...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                             /.entry-border 
+                        </div>
+                         /.box-item 
+                        <div class="box-item clearfix">
+                            <div class="entry-border">
+                                <div class="feature-post">
+                                    <a href="#">
+                                        <img src="assets/images/blog/latest/3.jpg" alt="image">
+                                    </a>
+                                </div>
+                                 /.feature-post 
+                                <div class="content-post border-none">
+                                    <h5 class="title-post">
+                                        <a href="blog-details.html">Tips for being better Musician</a>
+                                    </h5>
+                                    <ul class="meta-post clearfix">
+                                        <li class="author">
+                                            <a href="#">Admin</a>
+                                        </li>
+                                        <li class="day">
+                                            <a href="#">December 05, 2016 </a>
+                                        </li>
+                                        <li class="comment">
+                                            <a href="#"> 2 Comments</a>
+                                        </li>
+                                    </ul>
+                                     /.meta-post 
+                                    <div class="entry-post">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                            have suffered alteration in some form...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                             /.entry-border 
+                        </div>
+                         /.box-item 
+                        <div class="box-item clearfix">
+                            <div class="entry-border">
+                                <div class="feature-post">
+                                    <a href="#">
+                                        <img src="assets/images/blog/latest/4.jpg" alt="image">
+                                    </a>
+                                </div>
+                                 /.feature-post 
+                                <div class="content-post border-none">
+                                    <h5 class="title-post">
+                                        <a href="blog-details.html">Prepare for Jobs’ Opportunity</a>
+                                    </h5>
+                                    <ul class="meta-post clearfix">
+                                        <li class="author">
+                                            <a href="#">Admin</a>
+                                        </li>
+                                        <li class="day">
+                                            <a href="#">Jun 17, 2016</a>
+                                        </li>
+                                        <li class="comment">
+                                            <a href="#"> 1 Comments</a>
+                                        </li>
+                                    </ul>
+                                     /.meta-post 
+                                    <div class="entry-post">
+                                        <p>But the majority have suffered alteration in some form, by injected humour...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                             /.entry-border 
+                        </div>
+                         /.box-item 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="educa-row parallax-fixed background4 v4" style="background-position: 50% 65px;">
+        <div class="overlay-background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section color-style text-center">
+                        <h1 class="title">Subscribe Now</h1>
+                        <div class="sub-title">
+                            Subscribe and receive weekly newsletter with educational materials, new
+                            <br>courses, interesting posts, popular books
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="subscribe-form" class="educa-subscribe-form padding-leftright-300" method="post" data-mailchimp="true" novalidate="true">
+                        <div class="field clearfix" id="subscribe-content">
+                            <p class="group-input-email">
+                                <input id="subscribeEmail" type="email" name="EMAIL" placeholder="Your email..." class="validate">
+                                <label for="subscribeEmail" data-error="wrong" data-success="right" hidden="">Type your email</label>
+                            </p>
+                            <p class="group-btn">
+                                <button type="submit" id="subscribe-button" class="educa-button subscribe-submit" title="Subscribe now">SUBSCRIBE</button>
+                            </p>
+                        </div>
+                        <div class="subscription-success"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="educa-row v8 section-event-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section">
+                        <h1 class="title text-center">Recent Event</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="post-event">
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="educa-row section-testimonation parallax-fixed background1" style="background-position: 50% 65px;">
+        <div class="overlay-background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section text-center color-style">
+                        <h1 class="title">What’s Student Say ?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="educa-testimonials owl-carousel owl-theme owl-loaded" data-item="2" data-nav="true" data-dot="true" data-auto="true">
+                                            <div class="owl-stage-outer"><div class="owl-stage"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="main-footer is-fixed" data-fixed="true" itemscope="itemscope">
+    <!-- /footer -->
+
+    <!-- Bottom -->
+    <div class="bottom style3 clearfix">
+        <div class="container-fluid2">
+            <div class="copyright one-half">
+                <p>Copyright ©2018-2020
+                    <a href="#">technOrbit infosystems</a> - All Right Reserved</p>
+            </div>
+            <div class="one-half">
+                <div class="menu-footer text-right">
+                   <!-- <ul class="menu">
+                        <li>
+                            <span>Developed By :</span><a href="https://www.sdblog.com" target="_blank"> Shrikant Dighe</a> &
+                            <a href="https://www.facebook.com/itsmerahulghule" target="_blank"> Rahul Ghule</a>
+
+                        </li>
+                        <li><a href="http://technorbit.in/adminpanel/">Admin Login</a></li>
+                        <li><a href="http://technorbit.in/adminpanel/student">Student Login</a></li>
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+</footer>
+<!-- Javascript -->
+<script src="techno_files/jquery_003.js"></script>
+<script src="techno_files/bootstrap.js"></script>
+<script src="techno_files/jquery_006.js"></script>
+<script src="techno_files/jquery-menu.js"></script>
+<script src="techno_files/owl.js"></script>
+<script src="techno_files/carousel-filter.js"></script>
+<script src="techno_files/parallax.js"></script>
+<script src="techno_files/imagesloaded.js"></script>
+<script src="techno_files/jquery.js"></script>
+<script src="techno_files/ajaxmailchimp.js"></script>
+<script src="techno_files/jquery-validate.js"></script>
+<script src="techno_files/slick.js"></script>
+<script src="techno_files/jquery_005.js"></script>
+<script src="techno_files/script.js"></script>
+
+<!-- Revolution Slider -->
+<script src="techno_files/jquery_002.js"></script>
+<script src="techno_files/jquery_004.js"></script>
+<script src="techno_files/slider.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+<script src="techno_files/revolution_003.js"></script>
+<script src="techno_files/revolution_008.js"></script>
+<script src="techno_files/revolution_002.js"></script>
+<script src="techno_files/revolution.js"></script>
+<script src="techno_files/revolution_007.js"></script>
+<script src="techno_files/revolution_005.js"></script>
+<script src="techno_files/revolution_006.js"></script>
+<script src="techno_files/revolution_004.js"></script>
+<script>
+    var pathArray = window.location.pathname.split('/');
+//alert(pathArray[2]);
+    $('#' + pathArray[1] + '').addClass("home");
+
+    function logout() {
+        $.ajax({
+            type: "POST",
+            url: "logout.php",
+            dataType  : 'json',
+            success: function (data) {
+                if(data==true){
+                	//alert(pathArray[1]);
+                    alert("Successfully Loged Out!");
+                    var pathArray = window.location.pathname.split('/');
+                    window.location.href = pathArray[1];
+
+                }
+            }
+        });
+    }
+</script>
+
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">bra xxx <a href="https://stripmpegs.info/" target="_self">stripmpegs.info</a> xvideos2desi</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">naked indian gays <a href="https://gotporn.mobi/" target="_blank">gotporn.mobi</a> wwwxideos.com</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">bp sex vidio <a href="https://katestube.mobi/" target="_self">katestube.mobi</a> kamapichachi samantha</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">south indian home sex <a href="https://pornthaivideos.com/">pornthaivideos.com</a> bengali xx bf</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">bangladesh bf com <a href="https://sexpoper.com/" rel="dofollow" title="sexpoper.com ultra hd porn">sexpoper.com</a> sexy hindu</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">hdmi to vga <a href="https://www.sobazo.com/" title="sobazo.com">sobazo.com</a> mini laptop price</div>
+
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">porn video indian download <a href="https://ultraporn.mobi/" rel="dofollow" title="ultraporn.mobi">ultraporn.mobi</a> monalisa hot scene</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">shelley lubben <a href="https://momsporn.mobi/" rel="dofollow" title="momsporn.mobi tube x porn video">momsporn.mobi</a> actress reema sen</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">free sex mms video <a href="https://coxhamster.mobi/">coxhamster.mobi</a> indian actress x videos</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">animal sexy video download hd <a href="https://fuckswille.com/" target="_self">fuckswille.com</a> fb aunties</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">sxx vibeo <a href="https://gansta-xxx-porn.net/" title="gansta-xxx-porn.net hd porn full movies">gansta-xxx-porn.net</a> nude south indian bhabhi</div>
+
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">xxx napali video <a href="https://penytube.mobi/" target="_blank" title="penytube.mobi one video porn tube">penytube.mobi</a> tamil movie xvideo</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">indian tits photos <a href="https://pinkpix.net/" title="pinkpix.net hq porn free">pinkpix.net</a> pornplease</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">namitha pramod <a href="https://jizzman.mobi/" rel="dofollow" target="_blank">jizzman.mobi</a> sexy anty</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">usemypussy com <a href="https://pornhan.mobi/" rel="dofollow" target="_blank">pornhan.mobi</a> indian xvedeos</div>
+<div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;">javhihi <a href="https://indaporn.info/" rel="dofollow" target="_self" title="indaporn.info">indaporn.info</a> tamil free sex videos</div>
+
+
+
+
+<a class="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a></body></html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Quiz App</title>
+</head>
+<style>
+body {
+	margin: 0;
+	font-size: 16px;
+    background-image:url("../img/acker.jpg");
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 400;
+}
+
+#studentsay{
+border: 1px solid white;
+height: 100px;
+width: 100px;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.custom-box {
+	max-width: 700px;
+	background-color: #ffffff;
+	margin: 40px auto;
+	padding: 30px;
+	border-radius:10px;
+	animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight{
+0%{
+transform:translateX(40px);
+opacity:0;
+}
+100%{
+transform:translateX(0px);
+opacity:1;
+
+}
+}
+
+.custom-box::before,
+.custom-box::after{
+content:'';
+clear:both;
+display:table;
+
+} 
+
+.custom-box.hide{
+display: none;
+}
+
+.home-box h3{
+	font-size: 18px;
+	color: #000000;
+	font-weight: 500;
+	margin-bottom: 15px;
+	line-height: 25px;
+}
+
+.home-box p{
+	font-size: 16px;
+	margin-bottom: 10px;
+	line-height: 22px;
+	color: #000000;
+	font-weight: 400;
+}
+
+.home-box p span{
+	font-weight: 500;
+}
+
+.home-box btn{
+margin-top: 20px;
+}
+
+.btn{
+padding: 15px 45px;
+background-color: #009688;
+color: #ffffff;
+border: none;
+border-radius:10px; 
+font-size:16px;
+cursor: pointer;
+font-family: 'Montserrat',sans-serif;
+font-size:16px;
+cursor: pointer;
+display: inline-block;
+
+}
+
+.quiz-box .question-number{
+font-size: 18px;
+color: #009688;
+font-weight: 600;
+border-bottom:1px solid #cccccc;
+padding-bottom: 10px;
+
+}
+.quiz-box .question-text{
+font-size: 22px;
+color: #000000;
+line-height: 28px;
+font-weight: 400;
+padding: 20px 0;
+margin: 0;
+}
+.quiz-box .option-container{}
+.quiz-box .option-container .option{
+background-color: #cccccc;
+padding: 15px;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+border-radius:5px;
+margin-bottom: 10px;
+cursor: pointer;
+text-transform: capitalize;
+opacity:0;
+animation:fadeIn 0.3s ease forwards;
+position: relative;
+overflow: hidden;
+}
+
+@keyframes fadeIn{
+0%{
+  opacity:0;
+}
+100%{
+  opacity:1;
+}
+
+}
+
+
+
+.quiz-box .btn{
+margin: 15px 0;
+}
+
+.quiz-box .answers-indicator{
+border-top:1px solid #cccccc;
+}
+
+.quiz-box .answers-indicator div{
+height: 40px;
+width: 40px;
+display: inline-block;
+background-color: #cccccc;
+border-radius:50%;
+margin-right: 3px;
+margin-top:15px;
+}
+
+.quiz-box .answers-indicator div.correct{
+background-color: green;
+background-image: url("correct.jpg");
+background-size:50%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.quiz-box .answers-indicator div.wrong{
+background-color: red;
+background-image: url("wrongxd.png");
+background-size:50%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn,
+.quiz-box .answers-indicator{
+width: 100%;
+float:left;
+}
+
+.result-box{
+text-align: center;
+}
+
+.result-box .hide{
+display: none;
+}
+
+.result-box h1{
+font-size: 36px;
+line-height: 42px;
+color: #009688;
+
+}
+
+.result-box table{
+width: 100%;
+border-collapse:collapse;
+margin:30px 0;
+
+}
+.result-box table td{
+border: 1px solid #cccccc;
+padding:8px 15px;
+font-weight: 500;
+color: #000000;
+width: 50%;
+text-align: left;
+font-size: 18px;
+}
+
+.result-box .btn{
+margin-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+
+.quiz-box .option-container .option.correct::before{
+content : '';
+position: absolute;
+left: 0;
+top:0;
+height: 100%;
+width: 100%;
+background-color: green;
+z-index:-1;
+animation : slideInLeft .5s ease forwards;
+}
+
+.quiz-box .option-container .option.wrong::before{
+content : '';
+position: absolute;
+left: 0;
+top:0;
+height: 100%;
+width: 100%;
+background-color: red;
+z-index:-1;
+animation : slideInLeft .5s ease forwards;
+}
+
+.quiz-box .option-container .option.wrong{
+color: #ffffff;
+}
+
+@keyframes slideInLeft{
+0%{
+transform:translateX(-100%);
+}
+100%
+{
+transform:translateX(0%);
+}
+}
+
+.quiz-box .option-container .option.correct::before{
+color: #ffffff;
+
+
+}
+.quiz-box .option-container .option.already-answered{
+pointer-events:none;
+}
+
+@media(max-width : 767px){
+	.result-box .btn{
+	
+	margin-bottom: 15px;
+	}
+	body{
+	padding: 15px;
+	}
+}
+</style>
+<body>
+<ul>
+  <li><a href="/user/index">Home</a></li>
+  <li><a href="/user/courses">Courses</a></li>
+  <li><a href="/user/gallery">Gallery</a></li>
+  <li><a href="/user/quiz">Quiz</a></li>
+    <li><a href="/user/about">About Us</a></li>
+      <li><a href="/user/contactus">contactus</a></li>
+  <li><a href="/user/comment">Comment</a></li>
+  <li style="float:right"><a href="#">Profile</a></li>
+  <li style="float:right"><a href="/logout">Logout</a></li>
+</ul>
+		<form  action "" th:action="@{/quiz_result}" method="get" th:object="${stud_reg}">
+	<div id="box" class="home-box custom-box ">
+	<h3>Instruction :</h3>
+	<p>Total number of questions : <span class="total-question">5</span></p>
+	<button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+	</div>
+	
+	<div class="quiz-box custom-box hide">
+		<div class="question-number">
+			
+		</div>
+		<div class="question-text">
+			
+		</div>
+		<div class="option-container">
+			
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answers-indicator">
+	
+		</div>
+	
+	</div>
+	
+	<div class="result-box custom-box hide">
+	<h1>Quiz Result</h1>
+	<table>
+		<tr>
+			<td>Total Question</td>
+			<td><span class="total-question"></span></td>
+		</tr>
+		<tr>
+			<td>Attempt</td>
+			<td><span class="total-attempt"></span></td>
+		</tr>
+		<tr>
+			<td>Correct</td>
+			<td><span class="total-correct"></span></td>
+		</tr>
+		<tr>
+			<td>Wrong</td>
+			<td><span class="total-wrong"></span></td>
+		</tr>
+		<tr>
+			<td>Percentage</td>
+			<td><span class="percentage"></span></td>
+		</tr>
+		<tr>
+			<td>Your Total Score</td>
+			<td><span class="total-score"></span></td>
+		</tr>
+	</table>
+	<button type="button" class="btn" onclick="tryAgianQuiz()">Try Agian</button>
+		<button type="button" class="btn" onclick="goToHome()">Go Home</button>
+		<input type="submit" value="submit">
+	</div>
+		</form>
+<script>
+
+const quiz=[
+          {
+        	  q:'A train 125 m long passes a man, running at 5 km/hr in the same direction in which the train is going, in 10 seconds. The speed of the train is: ?',
+        	   options:['45 km/hr','50 km/hr','54 km/hr','55 km/hr'],
+        	   answer:3
+          },
+          {
+        	  q:'The length of the bridge, which a train 130 metres long and travelling at 45 km/hr can cross in 30 seconds, is:',
+       	   options:['200 m','225 m','245 m','250 m'],
+       	   answer:2
+          },
+          {
+        	  q:'Two trains running in opposite directions cross a man standing on the platform in 27 seconds and 17 seconds respectively and they cross each other in 23 seconds. The ratio of their speeds is: ',
+       	   options:['1 : 3','3 : 2','3 : 4','None of these'],
+       	   answer:1
+          },
+          {
+          q:'A train passes a station platform in 36 seconds and a man standing on the platform in 20 seconds. If the speed of the train is 54 km/hr, what is the length of the platform? ',
+       	   options:['120 m','240 m','300 m','None of these'],
+       	   answer:1
+          },
+           {
+          q:'A train 240 m long passes a pole in 24 seconds. How long will it take to pass a platform 650 m long? ',
+       	   options:['65 sec','89 sec','100 sec','150 sec'],
+       	   answer:1
+          },
+          {
+          q:'Two trains of equal length are running on parallel lines in the same direction at 46 km/hr and 36 km/hr. The faster train passes the slower train in 36 seconds. The length of each train is: ',
+       	   options:['50 m','72 m','80 m','82 m'],
+       	   answer:0
+          },
+          {
+          q:'A train 360 m long is running at a speed of 45 km/hr. In what time will it pass a bridge 140 m long?  ',
+       	   options:['40 sec','42 sec','45 sec','48 sec'],
+       	   answer:0
+          },
+          {
+          q:'Two trains are moving in opposite directions @ 60 km/hr and 90 km/hr. Their lengths are 1.10 km and 0.9 km respectively. The time taken by the slower train to cross the faster train in seconds is: ',
+       	   options:['36','45','48','49'],
+       	   answer:2
+          },
+          {
+          q:'A 270 metres long train running at the speed of 120 kmph crosses another train running in opposite direction at the speed of 80 kmph in 9 seconds. What is the length of the other train? ',
+       	   options:['230 m','240 m','260 m','320 m'],
+       	   answer:0
+          },
+          {
+          q:'A goods train runs at the speed of 72 kmph and crosses a 250 m long platform in 26 seconds. What is the length of the goods train?  ',
+       	   options:['230 m','240 m','260 m','270 m'],
+       	   answer:3
+          },
+          {
+          q:'Two trains, each 100 m long, moving in opposite directions, cross each other in 8 seconds. If one is moving twice as fast the other, then the speed of the faster train is:  ',
+       	   options:['30 km/hr','45 km/hr','60 km/hr','75 km/hr'],
+       	   answer:3
+          }
+          
+            
+            
+            
+            ]
+
+
+</script>
+
+<script type="text/javascript">
+
+const questionNumber=document.querySelector(".question-number");
+const questionText=document.querySelector(".question-text");
+const optionContainer=document.querySelector(".option-container");
+const answersIndicatorContainer = document.querySelector(".answers-indicator")
+const homeBox = document.querySelector(".home-box");
+const quizBox = document.querySelector(".quiz-box");
+const resultBox = document.querySelector(".result-box");
+
+
+var questionCounter=0;
+var currentQuestion;
+var avilableQuestions=[];
+var avilableOptions=[];
+var correctAnswers = 0;
+var attempt = 0;
+
+
+function setAvilableQuestions(){
+	const totalQuestion=quiz.length;
+	for(var i=0;i<totalQuestion;i++){
+		avilableQuestions.push(quiz[i]);
+	}
+	
+	
+}
+
+function getNewQuestion(){
+	
+	questionNumber.innerHTML="Question " + (questionCounter + 1) + " of " + quiz.length;
+	
+	const questionIndex = avilableQuestions[Math.floor(Math.random() * avilableQuestions.length)];
+	currentQuestion = questionIndex;
+	questionText.innerHTML = currentQuestion.q;
+
+	const index1=avilableQuestions.indexOf(questionIndex);
+	avilableQuestions.splice(index1,1);
+	//console.log(questionIndex);
+	//console.log(index1);
+	 //	console.log(avilableQuestions);
+
+ 	
+	
+	const optionLen = currentQuestion.options.length;
+	//console.log(optionLen);
+		//console.log(currentQuestion.options);
+		for(var i=0;i<optionLen;i++)
+			{
+			avilableOptions.push(i);
+			}
+	
+	optionContainer.innerHTML = ';'
+	var animationDelay =0.2;
+	for(var i=0;i<optionLen;i++){
+		
+		const optonIndex = avilableOptions[Math.floor(Math.random() * avilableOptions.length)];
+		const index2 = avilableOptions.indexOf(optonIndex);
+		avilableOptions.splice(index2,1);
+		const option = document.createElement("div");
+		option.innerHTML = currentQuestion.options[optonIndex];
+		option.id= optonIndex ;
+		option.style.animationDelay=animationDelay + 's';
+		animationDelay=animationDelay + 0.2;
+		option.className = "option";
+		optionContainer.appendChild(option)
+		option.setAttribute("onclick","getResult(this)");
+	}
+	questionCounter++;
+	
+	
+}
+
+function getResult(element)
+{
+	const id = parseInt(element.id);
+	if(id=== currentQuestion.answer){
+	element.classList.add("correct");
+	updateAnswerIndicator("correct");
+	correctAnswers++;
+	console.log("correct"+correctAnswers)
+	}
+	else
+		{
+		element.classList.add("wrong");
+		updateAnswerIndicator("wrong");
+
+		
+		const optionLen = optionContainer.children.length;
+		for(var i=0;i<optionLen;i++){
+			
+			if(parseInt(optionContainer.children[i].id)=== currentQuestion.answer){
+				optionContainer.children[i].classList.add("correct");
+			}
+		}
+		}
+	attempt++; 
+	unclickableOptions();
+}
+
+function updateAnswerIndicator(markType){
+	//console.log(markType)
+	answersIndicatorContainer.children[questionCounter-1].classList.add(markType);
+	
+}
+
+function unclickableOptions(){
+	const optionLen=optionContainer.children.length;
+	for(var i=0;i<optionLen;i++){
+		optionContainer.children[i].classList.add("already-answered");
+		
+	}
+	
+}
+
+function answerIndicator(){
+	answersIndicatorContainer.innerHTML='';
+	const totalQuestion = quiz.length;
+	for( var i=0 ; i<totalQuestion; i++)
+		{
+		const indicator = document.createElement("div");
+		answersIndicatorContainer.appendChild(indicator);
+		}
+}
+
+function next(){
+	
+	if(questionCounter === quiz.length){
+		console.log("quiz over");
+		quizOver();
+	}
+	else
+		{
+		getNewQuestion();
+		}
+}
+function quizOver(){
+	quizBox.classList.add("hide");
+	resultBox.classList.remove("hide");
+	quizResult();
+}
+
+function quizResult(){
+	resultBox.querySelector(".total-question").innerHTML=quiz.length;
+	resultBox.querySelector(".total-attempt").innerHTML=attempt;
+	resultBox.querySelector(".total-correct").innerHTML=correctAnswers;
+	resultBox.querySelector(".total-wrong").innerHTML=attempt - correctAnswers;
+	const percentage = (correctAnswers/quiz.length)*100;
+	resultBox.querySelector(".percentage").innerHTML=percentage.toFixed() + "%";
+	resultBox.querySelector(".total-score").innerHTML=correctAnswers +" / " +quiz.length;	
+}
+
+function tryAgianQuiz()
+{
+	resultBox.classList.add("hide");
+	quizBox.classList.remove("hide");
+	resetQuiz();
+	startQuiz();
+	}
+	
+	function resetQuiz()
+	{
+		 questionCounter=0;
+		 correctAnswers = 0;
+		 attempt = 0;
+	}
+	
+	function goToHome(){
+		
+		resultBox.classList.add("hide");
+		homeBox.classList.remove("hide");
+		resetQuiz();
+
+	}
+
+function startQuiz(){
+	
+	homeBox.classList.add("hide");
+	quizBox.classList.remove("hide");
+	setAvilableQuestions();
+	getNewQuestion();
+	answerIndicator();
+	
+}
+
+window.onload = function(){
+	
+	homeBox.querySelector(".total-question").innerHTML = quiz.length;
+}
+</script>
+
+
+</body>
+</html>

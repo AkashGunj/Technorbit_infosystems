@@ -1,0 +1,413 @@
+<html>
+<head>
+</head>
+<style>
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: green;
+}
+
+#course{
+	
+	border:1px solid bisque;
+	height:50%;
+	width:60%px;
+	background-image: url(../img/course.jpg);
+}
+
+#lblcourse{
+	
+	color: white;
+	font-size:50px;
+	
+}
+#inner{
+	margin-left: 42%;
+	margin-top:10%;
+}
+#path{
+	color: white;
+	font-size:20px;
+	margin-left:10px;
+	
+	
+}
+#inside{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+background-color:black;
+margin-left: 20px;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#inside1{
+border:1px solid orange;
+background-color:black;
+height:330px;
+width:300px;
+color:white;
+margin-left: 350px;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+#inside2{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 680px;
+background-color:black;
+margin-top:20px;
+z-index: 1;
+position: absolute;
+}
+
+#inside3{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 1010px;
+background-color:black;
+margin-top:20px;
+z-index: 1;
+position: absolute;	
+}
+#c{
+height:200px;
+width:300px;
+}
+#inside4{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 20px;
+background-color:black;
+margin-top:28%;
+z-index: 1;
+position: absolute;
+
+}
+#inside5{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 680px;
+background-color:black;
+margin-top:28%;
+z-index: -1;
+position: absolute;
+
+}
+#inside7{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 350px;
+background-color:black;
+margin-top:28%;
+z-index: -1;
+position: absolute;
+
+}
+#inside18{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 1010px;
+background-color:black;
+margin-top:28%;
+z-index: -1;
+position: absolute;
+
+}
+#inside8{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 20px;
+background-color:black;
+margin-top:54%;
+z-index: -1;
+position: absolute;
+
+}
+#inside9{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 350px;
+background-color:black;
+margin-top:54%;
+z-index: 1;
+position: absolute;
+
+}
+#inside10{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 680px;
+background-color:black;
+margin-top:54%;
+z-index: -1;
+position: absolute;
+
+}
+#inside11{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 1010px;
+background-color:black;
+margin-top:54%;
+z-index: -1;
+position: absolute;
+
+}
+#inside12{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 20px;
+background-color:black;
+margin-top:80%;
+z-index: 1;
+position: absolute;
+
+}
+#inside13{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 350px;
+background-color:black;
+margin-top:80%;
+z-index: -1;
+position: absolute;
+
+}
+#inside14{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 680px;
+background-color:black;
+margin-top:80%;
+z-index: -1;
+position: absolute;
+
+}
+#inside15{
+border:1px solid orange;
+height:330px;
+width:300px;
+color:white;
+margin-left: 1010px;
+background-color:black;
+margin-top:80%;
+z-index: -1;
+position: absolute;
+
+}
+
+#footer{
+	
+	border:1px solid black;
+	background-color: black;
+	color: white;
+	margin-top: 108%;
+	height: 60px;
+	width:100%;
+	text-align: center;
+	
+
+}
+#lblfooter{
+	font-size: 20px;
+}
+
+
+
+</style>
+
+<body style="background-color:lightyellow;">
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="courses">Courses</a></li>
+  <li><a href="gallery">Gallery</a></li>
+  <li><a href="about">About Us</a></li>
+  <li><a href="contactus">Contact</a></li>
+  <li><a href="/admin/index">Admin</a></li>
+  <li style="float:right"><a href="/user/index">Signin</a></li>
+</ul>
+
+	<div id="course">
+		<div id="inner">
+		<label id="lblcourse">Courses</label><br><br>
+		<label id="path">Home -> Courses</label>
+		</div>
+	</div>
+	
+	<div id="inside">
+	<a href="/c" >
+	<img src="../img/cprogram.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>C Language</b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside1">
+	<a href="/cpp" >
+	<img src="../img/c++.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>C++ Language</b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside2">
+	<a href="/java">
+	<img src="../img/java.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>Core Java</b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside3">
+	<a href="/ds">
+	<img src="../img/datastruc.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>Data Structure</b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside4">
+	<a href="/python">
+	<img src="../img/python.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>Python</b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside5">
+	<a href="courses.jsp">
+	<img src="../img/aud.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>Arduino</b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside7">
+	<a href="courses.jsp">
+	<img src="../img/machinelearning.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>Machine Learning </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside18">
+	<a href="iot.jsp">
+	<img src="../img/rasbery.jpg" id="c"><br><br></a>
+	<label id="lblc"><center><b>Raspberry PI </b></center></label>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside8">
+	<a href="courses.jsp">
+	<img src="../img/unix.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>Unix </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside9">
+	<a href="/micro">
+	<img src="../img/x86.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>X86 Microprocessor </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside10">
+	<a href="courses.jsp">
+	<img src="../img/8051.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>8051 Microcontroller </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+
+	<div id="inside11">
+	<a href="iot.jsp">
+	<img src="../img/iot.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>Internet Of Things </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	
+	<div id="inside12">
+	<a href="/html">
+	<img src="../img/html5.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>HTML5 </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside13">
+	<a href="courses.jsp">
+	<img src="../img/css.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>CSS3 </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside14">
+	<a href="courses.jsp">
+	<img src="../img/jquery.jpg" id="c"><br><br></a>
+	<lable id="lblc"><center><b>jQuery </b></center></lable>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+	
+	<div id="inside15">
+	<a href="iot.jsp">
+	<img src="../img/jscript.jpg" id="c"><br><br></a>
+	<label id="lblc"><center><b>Java Script </b></center></label>
+	<p id="commontext">&nbsp;&nbsp;There are many varitations of passages<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of Lorem Ipusm available,but the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; majority have	</p><br>
+	</div>
+
+
+	<div id="footer"><br>
+	<label id="lblfooter">@Copyright @2020-2021 technorbit infosystems - All Right Reserved</label>
+	
+	</div>
+
+</body>
+</html>
