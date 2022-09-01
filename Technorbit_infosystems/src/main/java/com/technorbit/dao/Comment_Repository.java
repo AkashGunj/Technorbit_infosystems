@@ -7,8 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.technorbit.entities.Comment;
-import com.technorbit.entities.ContactUs;
-import com.technorbit.entities.Stud_Registration;
+
 
 public interface Comment_Repository extends JpaRepository<Comment,Integer> {
 	
